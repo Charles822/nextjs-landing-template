@@ -1,0 +1,159 @@
+{
+  "slug": "altiusconseil",
+  "name": "Altius Conseil",
+  "brandColor": "#2563eb",
+  "hero": {
+    "heroVariant": "gradient",
+    "headline": {
+      "line1": "Allez plus haut",
+      "line2": "avec Altius.",
+      "line3": ""
+    },
+    "subheadline": "Formation et accompagnement Qualiopi pour entreprises et organismes de formation.",
+    "subheadlineBold": "Depuis 2015, nous mettons l'humain au cœur de votre réussite.",
+    "ctaText": "Nous contacter",
+    "badge1": "100% réussite\nQualiopi",
+    "badge2": "Depuis\n2015",
+    "cardTitle": "Expertise terrain",
+    "cardSubtitle": "Formateurs opérationnels",
+    "caption": "Premier rendez-vous gratuit"
+  },
+  "navigation": {
+    "logoText": "Altius Conseil",
+    "navLinks": [
+      { "label": "Nos formations", "href": "#services" },
+      { "label": "Qualiopi", "href": "#services" },
+      { "label": "Notre méthode", "href": "#methodologie" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Nous contacter"
+  },
+  "services": {
+    "sectionLabel": "Nos Expertises",
+    "headline": "Formation et accompagnement",
+    "headlineHighlight": "pour aller plus haut.",
+    "benefitsTitle": "Pourquoi Altius Conseil ?",
+    "benefits": [
+      {
+        "title": "100% réussite Qualiopi",
+        "description": "Tous nos clients accompagnés ont obtenu leur certification. Méthodologie éprouvée, pas de kit magique."
+      },
+      {
+        "title": "Expertise terrain",
+        "description": "Nos formateurs sont des experts de leur domaine avec une solide expérience technique. Interventions directement opérationnelles."
+      },
+      {
+        "title": "Depuis 2015",
+        "description": "Plus de 9 ans d'expérience dans la formation et l'accompagnement des entreprises et organismes de formation."
+      }
+    ],
+    "items": [
+      {
+        "id": "formation",
+        "icon": "Users",
+        "title": "Formation Professionnelle",
+        "description": "Management : piloter, guider, animer des équipes. Efficacité professionnelle : gérer la pression et les évolutions. Développement commercial : répondre à des clients exigeants. Interventions directement applicables sur le terrain.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "qualiopi",
+        "icon": "Award",
+        "title": "Accompagnement Qualiopi",
+        "description": "Obtention de la certification Qualiopi obligatoire depuis 2022 pour accéder aux financements publics. Diagnostic, structuration des 7 critères, audit blanc. 100% de nos clients accompagnés ont obtenu leur certification.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "creation",
+        "icon": "Building2",
+        "title": "Création d'Organisme",
+        "description": "Accompagnement complet de la conception au lancement : business plan, choix du statut, structuration pédagogique, dossier de déclaration, outils de gestion Qualiopi. Marché de 31,8 Milliards €, 126 000 organismes en France."
+        ,"cta": "En savoir plus"
+      }
+    ]
+  },
+  "valueProposition": {
+    "headline": "Une expertise terrain reconnue depuis 2015",
+    "subheadline": "Altius Conseil accompagne les entreprises et organismes de formation dans le développement de leurs compétences et l'obtention de la certification Qualiopi.",
+    "features": [
+      {
+        "icon": "Heart",
+        "title": "Facteur humain",
+        "description": "Nous plaçons l'humain au cœur du développement. Chaque formation est une expérience marquante qui inspire à agir."
+      },
+      {
+        "icon": "Target",
+        "title": "Expertise terrain",
+        "description": "Nos intervenants sont des experts avec une solide expérience technique. Leurs interventions sont directement opérationnelles."
+      },
+      {
+        "icon": "Award",
+        "title": "Qualité certifiée",
+        "description": "Satisfaction client au centre de notre démarche. Certifications et amélioration continue garantissent une expérience unique."
+      },
+      {
+        "icon": "CheckCircle",
+        "title": "100% réussite Qualiopi",
+        "description": "Tous nos clients accompagnés ont obtenu leur certification. Méthodologie éprouvée, pas de kit magique."
+      },
+      {
+        "icon": "Rocket",
+        "title": "Interactivité",
+        "description": "Extranet dédié et interactif pour échanger avec les stagiaires et mettre à disposition des ressources pédagogiques."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Relation individualisée",
+        "description": "Un interlocuteur dédié pour tisser une relation privilégiée tout au long de votre parcours."
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Méthode",
+    "headline": "Comment nous vous accompagnons",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Search",
+        "title": "Diagnostic",
+        "description": "Analyse de votre situation, de vos pratiques actuelles et identification de vos besoins spécifiques."
+      },
+      {
+        "number": "02",
+        "icon": "Lightbulb",
+        "title": "Stratégie",
+        "description": "Élaboration d'un plan d'action personnalisé avec des étapes claires et des actions concrètes."
+      },
+      {
+        "number": "03",
+        "icon": "Users",
+        "title": "Accompagnement",
+        "description": "Mise en œuvre pas à pas avec formation, structuration des processus et montée en compétences."
+      },
+      {
+        "number": "04",
+        "icon": "Award",
+        "title": "Certification",
+        "description": "Préparation à l'audit (audit blanc), obtention de la certification et autonomie pour le suivi qualité."
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "Qualiopi",
+    "Formation",
+    "Certification",
+    "Management",
+    "Depuis 2015",
+    "100% réussite"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Prêt à aller plus haut ?",
+    "intro": "Premier rendez-vous gratuit pour faire le point sur vos besoins et établir un devis personnalisé.",
+    "introBold": "Réponse sous 24h."
+  },
+  "footer": {
+    "description": "Formation et accompagnement Qualiopi pour entreprises et organismes de formation. Depuis 2015.",
+    "copyright": "Altius Conseil"
+  }
+}

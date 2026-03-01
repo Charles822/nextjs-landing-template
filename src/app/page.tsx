@@ -124,6 +124,19 @@ export default function Home() {
               <span className="text-2xl">→</span>
             </div>
           </Link>
+
+          <Link 
+            href="/altiusconseil"
+            className="block p-6 bg-[#2563eb]/20 hover:bg-[#2563eb]/30 rounded-2xl transition-all border border-[#2563eb]/30"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <h2 className="text-xl font-semibold mb-1 text-[#60a5fa]">Altius Conseil ⭐</h2>
+                <p className="text-slate-300 text-sm">Formation & accompagnement Qualiopi</p>
+              </div>
+              <span className="text-2xl">→</span>
+            </div>
+          </Link>
         </div>
 
         <div className="mt-12 text-center text-slate-500 text-sm">
