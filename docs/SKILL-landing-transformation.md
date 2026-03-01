@@ -99,15 +99,15 @@ Edit `landerMachine/src/lib/getProjectConfig.ts`:
 - Add slug to `ProjectSlug` type union
 
 ### 3.3 Add Images to public/
-Generate or copy images to `landerMachine/public/`:
+Generate or copy images to `landerMachine/public/` (or `public/{slug}/` for project-organized assets):
 
 | Asset Type | Path Pattern | Required? |
 |------------|--------------|-----------|
-| Hero image | `/hero-{slug}.jpg` | If hero.image is set in JSON |
-| Service images | `/service-{name}.jpg` | If services.items[].image is set |
+| Hero image | `/{slug}/hero-{slug}.png` or `/hero-{slug}.jpg` | If hero.image is set in JSON |
+| Service images | `/{slug}/service-{name}.png` or `/service-{name}.jpg` | If services.items[].image is set |
 | Logo | `/logo-{slug}.svg` | Optional |
 
-**CRITICAL RULE**: Every image path in the JSON must exist in `public/`. If a path is wrong or missing, the image won't display.
+**CRITICAL RULE**: Every image path in the JSON must exist in `public/`. If a path is wrong or missing, the image won't display. Use Step 4 (AssetsMachine) to generate images with the script.
 
 ### 3.4 Add Link to Home Page
 Edit `landerMachine/src/app/page.tsx`:
@@ -131,6 +131,8 @@ cd landerMachine && npm run build
 
 **Input:** Image generation model access (OpenRouter with `google/gemini-2.5-flash-image`)
 
+**Prerequisite:** Set `OPENROUTER_API_KEY` environment variable (required).
+
 **Actions:**
 
 ### Image Generation Rules
@@ -142,23 +144,36 @@ cd landerMachine && npm run build
 4. High-end commercial photography style
 5. 1024×1024px output
 
-**Scripts:**
-- Use `landerMachine/scripts/generate-image.sh` (OpenRouter implementation)
-- Images are saved as PNG, then copied to `public/`
+**Script:** `landerMachine/scripts/generate-image.py` (or `generate-image.sh` wrapper)
+- Requires `OPENROUTER_API_KEY` env var
+- Outputs PNG to `public/{slug}/` when `--slug` is used
+- Creates directory automatically
+
+**Usage:**
+```bash
+cd landerMachine
+export OPENROUTER_API_KEY="your-key"   # or ensure already set
+
+# Hero image → public/{slug}/hero-{slug}.png
+python scripts/generate-image.py "professional office, B2B, no text" hero-{slug} --slug {slug}
+
+# Service images → public/{slug}/service-{id}.png
+python scripts/generate-image.py "VTC taxi driver" service-vtc --slug {slug}
+python scripts/generate-image.py "..." service-taxi --slug {slug}
+```
 
 ### Generated Images
 
-| Type | Filename | Purpose |
-|------|----------|---------|
-| Hero | `hero-{slug}.jpg` | Main hero section image |
-| Service 1 | `service-{id1}.jpg` | First service card |
-| Service 2 | `service-{id2}.jpg` | Second service card |
-| Service 3 | `service-{id3}.jpg` | Third service card |
-| etc. | ... | ... |
+| Type | Filename | Config Path | Purpose |
+|------|----------|-------------|---------|
+| Hero | `hero-{slug}.png` | `/{slug}/hero-{slug}.png` | Main hero section image |
+| Service 1 | `service-{id1}.png` | `/{slug}/service-{id1}.png` | First service card |
+| Service 2 | `service-{id2}.png` | `/{slug}/service-{id2}.png` | Second service card |
+| etc. | ... | ... | ... |
 
 **After generation:**
-1. Move/copy all images to `landerMachine/public/`
-2. Update JSON config with correct image paths
+1. Images land in `landerMachine/public/{slug}/` (no manual copy needed)
+2. Update JSON config with paths: `"/{slug}/hero-{slug}.png"`, `"/{slug}/service-vtc.png"`, etc.
 3. Rebuild: `npm run build`
 
 ---
@@ -183,9 +198,11 @@ landerMachine/
 │       ├── getProjectConfig.ts  # Register slugs here
 │       └── icons.ts             # Available Lucide icons
 ├── public/                  # All images go here
-│   ├── hero-{slug}.jpg
-│   ├── service-*.jpg
-│   └── logo-*.svg
+│   ├── {slug}/              # Per-project folder (recommended)
+│   │   ├── hero-{slug}.png
+│   │   └── service-*.png
+│   ├── hero-*.jpg           # Or root-level (legacy)
+│   └── service-*.jpg
 └── scripts/
     └── generate-image.sh    # Image generation script
 ```
@@ -208,7 +225,7 @@ projects/
 **Hero with image:**
 ```json
 "hero": {
-  "image": "/hero-{slug}.jpg",
+  "image": "/{slug}/hero-{slug}.png",
   "imageAlt": "...",
   "headline": { "line1": "...", "line2": "...", "line3": "..." },
   ...
@@ -231,7 +248,7 @@ projects/
     {
       "id": "service1",
       "icon": "Car",
-      "image": "/service-service1.jpg",
+      "image": "/{slug}/service-service1.png",
       "title": "...",
       "description": "...",
       "cta": "..."
@@ -273,9 +290,10 @@ projects/
 - [ ] Step 3: Add images → `public/`
 - [ ] Step 3: Add home link → `src/app/page.tsx`
 - [ ] Step 3: Build → `npm run build` (no errors)
-- [ ] Step 4: Generate hero image (if needed)
-- [ ] Step 4: Generate service images (if needed)
-- [ ] Step 4: Copy images to `public/` and rebuild
+- [ ] Step 4: Set OPENROUTER_API_KEY
+- [ ] Step 4: Generate hero image: `python scripts/generate-image.py "..." hero-{slug} --slug {slug}`
+- [ ] Step 4: Generate service images with `--slug {slug}`
+- [ ] Step 4: Update JSON config paths to `/{slug}/filename.png` and rebuild
 
 ---
 

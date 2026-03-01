@@ -47,9 +47,40 @@ See `src/config/projects/schema.json` for the full JSON schema. Key points:
 
 | Asset | Path | Example |
 |-------|------|---------|
-| Hero | `/hero-{slug}.jpg` | `/hero-acfaty.jpg` |
-| Service | `/service-{name}.jpg` | `/service-vtc.jpg` |
+| Hero | `/{slug}/hero-{slug}.png` | `/acfaty/hero-acfaty.png` |
+| Service | `/{slug}/service-{name}.png` | `/acfaty/service-vtc.png` |
 | Logo | `/logo.svg` or `/{slug}/logo.svg` | `/logo.svg` |
+
+## Image Generation
+
+Use `scripts/generate-image.py` to create images via OpenRouter (Google Gemini 2.5 Flash Image).
+
+**Prerequisites:**
+- `OPENROUTER_API_KEY` in environment, or in `.env` at landerMachine root (uses python-dotenv)
+- Python 3 with `pip install -r scripts/requirements.txt` (requests, python-dotenv)
+
+**Usage:**
+```bash
+cd landerMachine
+python scripts/generate-image.py "prompt" output_name [--slug SLUG]
+```
+
+**Examples:**
+```bash
+# Hero for project acfaty → public/acfaty/hero-acfaty.png
+python scripts/generate-image.py "Professional B2B office" hero-acfaty --slug acfaty
+
+# Service images → public/acfaty/service-vtc.png, service-taxi.png
+python scripts/generate-image.py "VTC taxi driver" service-vtc --slug acfaty
+python scripts/generate-image.py "Taxi car" service-taxi --slug acfaty
+```
+
+**Options:**
+- `--slug SLUG` — Save to `public/{slug}/`. Creates directory if needed.
+- `--project-dir DIR` — Override output directory
+- `--format png|jpg` — Output format (default: png)
+
+**Config paths:** After generation, use `/{slug}/filename.png` in your JSON config (e.g. `"/acfaty/hero-acfaty.png"`).
 
 ## Validation
 
