@@ -25,7 +25,31 @@ All demo landing pages use a **single shared template** driven by JSON config:
 3. **LandingMachine** → Create JSON config + add images to public/
 4. **AssetsMachine** → Generate unique images
 
+**Optional Step 1.5:** Asset Download → Download partner logos, blog images, etc.
+
 **Pause after each step** for human review and approval before continuing.
+
+---
+
+## New Optional Sections (Template Update)
+
+Four optional config blocks were added. They render only when present:
+
+| Section | Purpose | JSON fields (per item) |
+|---------|---------|------------------------|
+| **partners** | Partner logos (separate from text-only partnersMarquee) | name, logo (path), url, description |
+| **testimonials** | Quote cards | quote, author, company, role |
+| **offers** | Offers distinct from services | id, title, description, cta, href |
+| **blog** | Blog teasers | id, title, excerpt, image, href, date |
+
+**Note:** `partnersMarquee` stays for text labels in the hero; `partners` is a separate section with logos.
+
+### Page Section Order
+
+Sections are rendered in this order:
+```
+Hero → ValueProposition → Services → Methodology → Offers → Partners → Testimonials → Blog → Contact → Footer
+```
 
 ---
 
@@ -47,12 +71,48 @@ All demo landing pages use a **single shared template** driven by JSON config:
    - CTAs and buttons
    - Navigation labels
    - Footer content
+4. **NEW:** Extract additional content (if present on source site):
+   - **Offers** (distinct from core services)
+   - **Partners** (names, descriptions, logo image URLs)
+   - **Testimonials** (quote, author, company, role)
+   - **Blog** (titles, excerpts, image URLs, dates)
+5. **NEW:** Create `assets.md` with URLs to download:
+   - Partner logo URLs
+   - Blog image URLs
+   - Any other visual assets from source site
 
 **Output files:**
 - `projects/{slug}/business.md`
 - `projects/{slug}/copy.md`
+- `projects/{slug}/assets.md` (NEW - list of URLs to download)
 
-**Checkpoint:** Stop and wait for user approval: *"Extraction complete. Review business.md and copy.md. Continue to copywriting?"*
+**Checkpoint:** Stop and wait for user approval: *"Extraction complete. Review business.md, copy.md, and assets.md. Continue to copywriting?"*
+
+---
+
+## Step 1.5: Asset Download (Optional)
+
+**Input:** `assets.md` from Step 1
+
+**Actions:**
+1. Read `assets.md` for URLs to download
+2. Run the fetch script:
+   ```bash
+   cd landerMachine
+   python3 scripts/fetch-assets.py --slug {slug}
+   ```
+3. Images are downloaded to `projects/{slug}/assets/`
+4. Optional: `assets-map.json` is created mapping URLs to local paths
+
+**Prerequisites:**
+- Python 3 with `requests` library
+- URLs listed in `assets.md`
+
+**Output:**
+- `projects/{slug}/assets/` folder with downloaded images
+- `projects/{slug}/assets-map.json` (optional)
+
+**Checkpoint:** Stop and wait for user approval: *"Assets downloaded. Review and continue to copywriting?"*
 
 ---
 
@@ -91,6 +151,7 @@ Create `landerMachine/src/config/projects/{slug}.json`:
 - Use `schema.json` as reference for all required fields
 - Map content from `new_copy.md` to JSON structure
 - **Required fields**: slug, name, brandColor, hero, navigation, services, valueProposition, methodology, partnersMarquee, contact, footer
+- **Optional fields** (include if present in source): partners, testimonials, offers, blog
 
 ### 3.2 Register the Slug
 Edit `landerMachine/src/lib/getProjectConfig.ts`:
@@ -105,6 +166,8 @@ Generate or copy images to `landerMachine/public/{slug}/`:
 |------------|--------------|-----------|
 | Hero image | `/{slug}/hero-{slug}.png` | If hero.image is set in JSON |
 | Service images | `/{slug}/service-{name}.png` | If services.items[].image is set |
+| Partner logos | `/{slug}/partner-{slug}-{index}.png` | If partners section exists |
+| Blog images | `/{slug}/blog-{slug}-{postId}.png` | If blog section exists |
 | Logo | `/{slug}/logo-{slug}.svg` | Optional |
 
 **CRITICAL RULE**: Every image path in the JSON must exist in `public/`. If a path is wrong or missing, the image won't display.
@@ -114,11 +177,17 @@ Generate or copy images to `landerMachine/public/{slug}/`:
 public/
 ├── {slug1}/
 │   ├── hero-{slug1}.png
-│   └── service-*.png
+│   ├── service-*.png
+│   ├── partner-{slug1}-*.png
+│   └── blog-{slug1}-*.png
 └── {slug2}/
     ├── hero-{slug2}.png
-    └── service-*.png
+│   ├── service-*.png
+│   ├── partner-{slug2}-*.png
+│   └── blog-{slug2}-*.png
 ```
+
+**Beyond Template Rule:** If the source has offers, partners (with logos), testimonials, or blog, include them in the JSON; do not drop them for being "non-standard".
 
 ### 3.4 Add Link to Home Page
 Edit `landerMachine/src/app/page.tsx`:
@@ -213,6 +282,20 @@ After generation, set image paths in the JSON config as:
 2. ✅ JSON config has correct paths (`/{slug}/filename.png`)
 3. ✅ Run `npm run build` to verify
 4. ✅ Check that images appear in `dist/{slug}/`
+
+### Sending Images to User for Validation
+
+To share generated images in Telegram/chat for user validation:
+
+```bash
+# Copy image to /tmp/ (allowed directory for messaging)
+cp /path/to/image.png /tmp/image.png
+
+# Then use the message tool with media parameter
+# The user will receive the image directly in chat
+```
+
+**Important:** Direct paths from workspace are not allowed. Always copy to `/tmp/` first.
 
 ### Script Features
 
@@ -327,11 +410,12 @@ projects/
 
 ## Checklist for Each Project
 
-- [ ] Step 1: Extract content → `business.md`, `copy.md`
+- [ ] Step 1: Extract content → `business.md`, `copy.md`, `assets.md`
+- [ ] Step 1.5: Download assets (optional) → `projects/{slug}/assets/`
 - [ ] Step 2: Rewrite copy → `new_copy.md`
 - [ ] Step 3: Create JSON config → `src/config/projects/{slug}.json`
 - [ ] Step 3: Register slug → `src/lib/getProjectConfig.ts`
-- [ ] Step 3: Add images → `public/`
+- [ ] Step 3: Add images → `public/{slug}/`
 - [ ] Step 3: Add home link → `src/app/page.tsx`
 - [ ] Step 3: Build → `npm run build` (no errors)
 - [ ] Step 4: Generate hero image (if needed)
