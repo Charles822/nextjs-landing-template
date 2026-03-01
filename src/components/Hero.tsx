@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowRight, Check, Award } from "lucide-react";
 import type { ProjectConfig } from "@/types/project";
 import PartnersMarquee from "./PartnersMarquee";
+import ServiceImageCarousel from "./ServiceImageCarousel";
 
 interface HeroProps {
   config: ProjectConfig;
@@ -127,9 +128,7 @@ export default function Hero({ config }: HeroProps) {
                     </div>
                   </div>
                   <div className="relative w-full overflow-hidden border rounded-lg h-28 bg-slate-800 border-white/10">
-                    <div className="flex items-center justify-center h-full text-white/60 text-sm">
-                      {hero.caption}
-                    </div>
+                    <ServiceImageCarousel services={config.services.items} />
                   </div>
                   <div className="w-full h-px mt-4 overflow-hidden rounded-full bg-white/20">
                     <div className="h-full bg-white rounded-full w-full" />
@@ -168,9 +167,7 @@ export default function Hero({ config }: HeroProps) {
                     </div>
                   </div>
                   <div className="relative w-full overflow-hidden border rounded-lg h-28 bg-slate-800 border-white/10">
-                    <div className="flex items-center justify-center h-full text-white/60 text-sm">
-                      {hero.caption}
-                    </div>
+                    <ServiceImageCarousel services={config.services.items} />
                   </div>
                   <div className="w-full h-px mt-4 overflow-hidden rounded-full bg-white/20">
                     <div className="h-full bg-white rounded-full w-full" />
