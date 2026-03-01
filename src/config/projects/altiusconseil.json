@@ -3,7 +3,8 @@
   "name": "Altius Conseil",
   "brandColor": "#2563eb",
   "hero": {
-    "heroVariant": "gradient",
+    "image": "/altiusconseil/hero-altiusconseil.png",
+    "imageAlt": "Formation professionnelle - Altius Conseil",
     "headline": {
       "line1": "Allez plus haut",
       "line2": "avec Altius.",
