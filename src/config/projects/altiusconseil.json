@@ -52,6 +52,7 @@
       {
         "id": "formation",
         "icon": "Users",
+        "image": "/altiusconseil/service-formation.png",
         "title": "Formation Professionnelle",
         "description": "Management : piloter, guider, animer des équipes. Efficacité professionnelle : gérer la pression et les évolutions. Développement commercial : répondre à des clients exigeants. Interventions directement applicables sur le terrain.",
         "cta": "En savoir plus"
@@ -59,6 +60,7 @@
       {
         "id": "qualiopi",
         "icon": "Award",
+        "image": "/altiusconseil/service-qualiopi.png",
         "title": "Accompagnement Qualiopi",
         "description": "Obtention de la certification Qualiopi obligatoire depuis 2022 pour accéder aux financements publics. Diagnostic, structuration des 7 critères, audit blanc. 100% de nos clients accompagnés ont obtenu leur certification.",
         "cta": "En savoir plus"
@@ -66,9 +68,10 @@
       {
         "id": "creation",
         "icon": "Building2",
+        "image": "/altiusconseil/service-creation.png",
         "title": "Création d'Organisme",
-        "description": "Accompagnement complet de la conception au lancement : business plan, choix du statut, structuration pédagogique, dossier de déclaration, outils de gestion Qualiopi. Marché de 31,8 Milliards €, 126 000 organismes en France."
-        ,"cta": "En savoir plus"
+        "description": "Accompagnement complet de la conception au lancement : business plan, choix du statut, structuration pédagogique, dossier de déclaration, outils de gestion Qualiopi. Marché de 31,8 Milliards €, 126 000 organismes en France.",
+        "cta": "En savoir plus"
       }
     ]
   },
