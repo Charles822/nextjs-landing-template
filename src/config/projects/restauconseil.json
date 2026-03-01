@@ -1,0 +1,155 @@
+{
+  "slug": "restauconseil",
+  "name": "Restauconseil",
+  "brandColor": "#5489a3",
+  "hero": {
+    "image": "/hero-restauconseil.jpg",
+    "imageAlt": "Cuisine professionnelle moderne - Restauconseil",
+    "quote": "Les plus belles réussites sont souvent le fruit d'une complexité bien gérée.",
+    "quoteAuthor": "Sylvain Caussignac / Président",
+    "headline": {
+      "line1": "Ingénierie de la",
+      "line2": "restauration",
+      "line3": "depuis 1978."
+    },
+    "subheadline": "Bureau d'étude et de conseil spécialisé en aménagement de cuisines professionnelles.",
+    "subheadlineBold": "45 ans d'expertise technique",
+    "ctaText": "Discuter de votre projet",
+    "badge1": "45 ans\nd'expérience",
+    "badge2": "Cuisines\nprofessionnelles",
+    "cardTitle": "Cuisines professionnelles",
+    "cardSubtitle": "De l'étude à la livraison",
+    "caption": "Expertise technique reconnue"
+  },
+  "navigation": {
+    "logoText": "Restauconseil",
+    "navLinks": [
+      { "label": "Nos missions", "href": "#expertises" },
+      { "label": "Notre méthode", "href": "#methodologie" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Discuter de votre projet"
+  },
+  "services": {
+    "sectionLabel": "Nos Missions",
+    "headline": "Une expertise technique au service de votre projet",
+    "headlineHighlight": "de l'étude à la réalisation.",
+    "benefitsTitle": "Pourquoi Restauconseil ?",
+    "benefits": [
+      {
+        "title": "45 ans d'expérience",
+        "description": "Depuis 1978, nous concevons et réalisons des cuisines professionnelles avec une expertise reconnue."
+      },
+      {
+        "title": "Spécialistes techniques",
+        "description": "Ingénierie de la restauration uniquement. Pas de généralistes, que des experts du secteur."
+      },
+      {
+        "title": "Bureau d'étude complet",
+        "description": "De l'étude de faisabilité à la réception des travaux. Un interlocuteur unique pour votre projet."
+      }
+    ],
+    "items": [
+      {
+        "id": "conseil",
+        "icon": "ClipboardList",
+        "image": "/service-conseil.jpg",
+        "title": "Conseil & Études",
+        "description": "De l'idée à la faisabilité technique. Étude de faisabilité, analyse des flux, dimensionnement des espaces et des équipements, budget prévisionnel.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "ingenierie",
+        "icon": "PencilRuler",
+        "image": "/service-ingenierie.jpg",
+        "title": "Ingénierie & Conception",
+        "description": "Conception technique de votre cuisine professionnelle. Plans d'exécution, choix des équipements, coordination technique avec les corps d'état.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "realisation",
+        "icon": "HardHat",
+        "image": "/service-realisation.jpg",
+        "title": "Réalisation & Suivi",
+        "description": "De la conception à la livraison clé en main. Suivi de chantier, contrôle qualité, réception, mise en service et formation des équipes.",
+        "cta": "En savoir plus"
+      }
+    ]
+  },
+  "valueProposition": {
+    "headline": "Une expertise technique au service de votre projet",
+    "subheadline": "Le secteur de la restauration est complexe. Notre métier est de gérer cette complexité pour vous.",
+    "features": [
+      {
+        "icon": "Award",
+        "title": "45 ans d'expérience",
+        "description": "Depuis 1978, nous concevons et réalisons des cuisines professionnelles avec une expertise reconnue sur le long terme."
+      },
+      {
+        "icon": "Lightbulb",
+        "title": "Spécialistes techniques",
+        "description": "Ingénierie de la restauration uniquement. Pas de généralistes, que des experts maîtrisant les contraintes techniques."
+      },
+      {
+        "icon": "Users",
+        "title": "Interlocuteur unique",
+        "description": "De l'étude de faisabilité à la réception des travaux, une équipe dédiée qui connaît votre projet dans les moindres détails."
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Respect des normes",
+        "description": "Hygiène alimentaire, sécurité incendie, accessibilité PMR, réglementation thermique. Conformité garantie."
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Méthode",
+    "headline": "Comment nous travaillons",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Search",
+        "title": "Comprendre votre projet",
+        "description": "Nous analysons vos besoins, vos contraintes (normatives, architecturales, budgétaires) et vos objectifs de performance. Chaque projet est unique."
+      },
+      {
+        "number": "02",
+        "icon": "PencilRuler",
+        "title": "Concevoir la solution",
+        "description": "Nous élaborons les études techniques, les plans et les choix d'équipements adaptés. Optimisation des flux, ergonomie, respect des normes."
+      },
+      {
+        "number": "03",
+        "icon": "HardHat",
+        "title": "Coordonner la réalisation",
+        "description": "Nous pilotons les travaux et coordonnons les différents corps de métier. Respect des délais, du budget et des normes."
+      },
+      {
+        "number": "04",
+        "icon": "CheckCircle",
+        "title": "Livrer et accompagner",
+        "description": "Nous réceptionnons les travaux, formons vos équipes et vous laissons une documentation complète. Votre cuisine est opérationnelle."
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "Depuis 1978",
+    "Ingénierie de la restauration",
+    "Cuisines professionnelles",
+    "Restauration commerciale",
+    "Collectivités",
+    "Hospitalier",
+    "Hôtellerie"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Parlons de votre projet",
+    "intro": "Vous avez un projet de cuisine professionnelle ? Un aménagement à concevoir ou à rénover ?",
+    "introBold": "Premier échange gratuit pour comprendre vos besoins."
+  },
+  "footer": {
+    "description": "Bureau d'étude et de conseil spécialisé en ingénierie de la restauration. Cuisines professionnelles depuis 1978.",
+    "copyright": "Restauconseil"
+  }
+}

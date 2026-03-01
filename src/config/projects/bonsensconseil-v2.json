@@ -1,0 +1,150 @@
+{
+  "slug": "bonsensconseil-v2",
+  "name": "BonSens Conseil",
+  "brandColor": "#2D5A3D",
+  "hero": {
+    "imageAlt": "BonSens Conseil - RSE",
+    "headline": {
+      "line1": "Intégrez la RSE",
+      "line2": "dans votre stratégie",
+      "line3": "opérationnelle."
+    },
+    "subheadline": "Depuis 2014, nous aidons entreprises et collectivités à structurer leur démarche RSE sur des bases méthodologiques reconnues. Agréés AFNOR, nous intervenons à chaque étape :",
+    "subheadlineBold": "diagnostic, plan d'action, formation, évaluation.",
+    "ctaText": "Discuter de votre projet",
+    "badge1": "Agréé AFNOR\nISO 26000",
+    "badge2": "+20 ans\nd'expérience",
+    "cardTitle": "Agréé AFNOR",
+    "cardSubtitle": "ISO 26000 • ISO 20400",
+    "caption": "+80 organisations accompagnées",
+    "heroVariant": "gradient"
+  },
+  "navigation": {
+    "logoText": "BonSens Conseil",
+    "navLinks": [
+      { "label": "Nos expertises", "href": "#expertises" },
+      { "label": "Notre méthode", "href": "#methodologie" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Discuter de votre projet"
+  },
+  "services": {
+    "sectionLabel": "Nos Expertises",
+    "headline": "3 domaines d'intervention pour structurer votre démarche",
+    "headlineHighlight": "de l'évaluation au déploiement.",
+    "benefitsTitle": "Pourquoi BonSens Conseil ?",
+    "benefits": [
+      {
+        "title": "Agrément AFNOR",
+        "description": "Évaluations ISO 26000 et formations certifiantes réalisées par des auditeurs agréés."
+      },
+      {
+        "title": "20 ans d'expérience",
+        "description": "Expertise terrain construite avec la stratégie RSE d'Accor international et +80 organisations accompagnées."
+      },
+      {
+        "title": "Approche opérationnelle",
+        "description": "Solutions concrètes et réalisables, pas que du conseil. Accompagnement jusqu'à la mise en œuvre."
+      }
+    ],
+    "items": [
+      {
+        "id": "conseil",
+        "icon": "Leaf",
+        "title": "Conseil stratégique RSE",
+        "description": "Définir une feuille de route RSE cohérente avec votre stratégie métier. Intégration de la RSE à votre plan stratégique, cartographie des parties prenantes, plan d'action avec indicateurs.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "diagnostic",
+        "icon": "Award",
+        "title": "Diagnostic et évaluation",
+        "description": "Évaluez votre niveau de maturité et identifiez vos leviers de progrès. Évaluation ISO 26000 agréée AFNOR, diagnostic achats responsables, matrice de matérialité ESG.",
+        "cta": "Demander un diagnostic"
+      },
+      {
+        "id": "formation",
+        "icon": "BookOpen",
+        "title": "Formations sur mesure",
+        "description": "Monter en compétence interne sur les enjeux RSE. Formations pour COMEX, responsables RSE, équipes opérationnelles. Préparation aux labels certifiants.",
+        "cta": "Voir les programmes"
+      }
+    ]
+  },
+  "valueProposition": {
+    "headline": "Une approche RSE pragmatique et opérationnelle",
+    "subheadline": "Nous nous appuyons sur les référentiels internationaux éprouvés pour structurer votre démarche sur des bases solides.",
+    "features": [
+      {
+        "icon": "Search",
+        "title": "Méthodologies reconnues",
+        "description": "ISO 26000, ISO 20400, BNQ 9700. Pas de jargon ni concepts internes — des standards que vos auditeurs connaissent."
+      },
+      {
+        "icon": "FileCheck",
+        "title": "Agrément AFNOR",
+        "description": "Habilités à réaliser vos évaluations ISO 26000 et à vous préparer aux labels. Garantie de qualité méthodologique."
+      },
+      {
+        "icon": "UserCheck",
+        "title": "Expertise terrain",
+        "description": "Notre fondatrice a construit la stratégie RSE d'Accor à l'international. 20 ans d'expérience opérationnelle."
+      },
+      {
+        "icon": "Leaf",
+        "title": "Entreprise à mission",
+        "description": "Statut ESS et entreprise à mission — un alignement réel entre notre modèle économique et nos prestations."
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Méthode",
+    "headline": "Comment nous travaillons",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Search",
+        "title": "Comprendre votre contexte",
+        "description": "Diagnostic approfondi de votre écosystème, parties prenantes et enjeux prioritaires. Chaque organisation a son histoire et ses contraintes."
+      },
+      {
+        "number": "02",
+        "icon": "Map",
+        "title": "Définir une feuille de route",
+        "description": "Plan d'action adapté à vos ressources et calendrier. Pas de plan théorique impossible à tenir — des actions concrètes, datées et responsabilisées."
+      },
+      {
+        "number": "03",
+        "icon": "Users",
+        "title": "Accompagner le déploiement",
+        "description": "Formation des équipes, documentation, suivi des indicateurs, ajustements. Vous n'êtes pas livrés à vous-mêmes après le diagnostic."
+      },
+      {
+        "number": "04",
+        "icon": "Trophy",
+        "title": "Évaluer et pérenniser",
+        "description": "Mesure des progrès réalisés et préparation des étapes suivantes. La RSE est un parcours, pas une destination."
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "RSE",
+    "ISO 26000",
+    "ISO 20400",
+    "Agrément AFNOR",
+    "Évaluation",
+    "Formation",
+    "Entreprise à mission"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Parlons de votre projet",
+    "intro": "Vous souhaitez structurer votre démarche RSE ? Un diagnostic de maturité ? Une formation pour vos équipes ?",
+    "introBold": "Premier échange gratuit pour évaluer vos besoins."
+  },
+  "footer": {
+    "description": "Cabinet conseil en RSE. Agréé AFNOR pour les évaluations ISO 26000. Entreprise à mission.",
+    "copyright": "BonSens Conseil"
+  }
+}

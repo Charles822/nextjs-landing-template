@@ -1,0 +1,152 @@
+{
+  "slug": "katalyse",
+  "name": "Katalyse",
+  "brandColor": "#0065c2",
+  "hero": {
+    "image": "/hero-katalyse.jpg",
+    "imageAlt": "Katalyse - équipe de consultants en stratégie",
+    "headline": {
+      "line1": "Cabinet de conseil",
+      "line2": "en stratégie PME & ETI",
+      "line3": "depuis 1990."
+    },
+    "subheadline": "Pas d'eau tiède. Des recommandations claires et argumentées pour vos décisions stratégiques.",
+    "subheadlineBold": "36 ans d'expertise sectorielle",
+    "ctaText": "Discuter de votre projet",
+    "badge1": "36 ans\nd'expérience",
+    "badge2": "PME & ETI\nspécialiste",
+    "cardTitle": "Stratégie",
+    "cardSubtitle": "Recommandations actionnables",
+    "caption": "Accompagnement sur-mesure pour dirigeants"
+  },
+  "navigation": {
+    "logoText": "Katalyse",
+    "navLinks": [
+      { "label": "Nos missions", "href": "#expertises" },
+      { "label": "Notre méthode", "href": "#methodologie" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Discuter de votre projet"
+  },
+  "services": {
+    "sectionLabel": "Nos Missions",
+    "headline": "Conseil en stratégie pour accompagner votre développement",
+    "headlineHighlight": "de l'analyse à l'action.",
+    "benefitsTitle": "Pourquoi Katalyse ?",
+    "benefits": [
+      {
+        "title": "36 ans d'expérience",
+        "description": "Depuis 1990, accompagnement de centaines de PME et ETI françaises."
+      },
+      {
+        "title": "Spécialiste PME/ETI",
+        "description": "Contrairement aux grands cabinets, nous ne travaillons qu'avec des PME et ETI."
+      },
+      {
+        "title": "Équipe taillée sur-mesure",
+        "description": "9 consultants permanents + 45 experts externes. La bonne expertise au bon moment."
+      }
+    ],
+    "items": [
+      {
+        "id": "strategie",
+        "icon": "Building2",
+        "image": "/service-strategie.jpg",
+        "title": "Stratégie d'entreprise",
+        "description": "Définir et déployer votre stratégie de développement. Diagnostic stratégique, analyse de marché, construction de plans d'action concrets pour dirigeants et actionnaires.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "duediligence",
+        "icon": "Search",
+        "image": "/service-duediligence.jpg",
+        "title": "Due diligence stratégique",
+        "description": "Évaluer la pertinence et la viabilité d'une acquisition ou d'un investissement. Analyse des actifs, marchés, équipes et synergies pour fonds d'investissement.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "revitalisation",
+        "icon": "RefreshCw",
+        "image": "/service-revitalisation.jpg",
+        "title": "Revitalisation & repositionnement",
+        "description": "Redonner de la dynamique à une activité en stagnation. Diagnostic des freins, identification des leviers de différenciation, accompagnement au changement.",
+        "cta": "En savoir plus"
+      }
+    ]
+  },
+  "valueProposition": {
+    "headline": "Un conseil direct, sans complaisance",
+    "subheadline": "36 ans d'accompagnement de PME et ETI françaises, avec une approche fondée sur quatre valeurs.",
+    "features": [
+      {
+        "icon": "Target",
+        "title": "Engagement",
+        "description": "Nous nous engageons pleinement dans chaque mission. Si vous cherchez du consensus mou, ne nous sollicitez pas."
+      },
+      {
+        "icon": "Heart",
+        "title": "Sincérité",
+        "description": "Nous vous disons ce que vous devez entendre — pas ce que vous voulez entendre. Indépendance totale garantie."
+      },
+      {
+        "icon": "Award",
+        "title": "Exigence",
+        "description": "La rigueur n'est pas un vain mot chez nous. C'est une marque de fabrique visible dans chaque livrable."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Solidarité",
+        "description": "Nos consultants sont toujours prêts à donner un coup de main, au-delà de leurs attributions strictes."
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Méthode",
+    "headline": "Comment nous travaillons",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Search",
+        "title": "Diagnostic",
+        "description": "Analyse approfondie de votre situation, de vos marchés, de vos forces et faiblesses. Nous prenons le temps de comprendre avant de recommander."
+      },
+      {
+        "number": "02",
+        "icon": "Lightbulb",
+        "title": "Recommandations",
+        "description": "Préconisations claires et argumentées, directement actionnables. Pas de rapport théorique, des solutions concrètes pour vos équipes."
+      },
+      {
+        "number": "03",
+        "icon": "Users",
+        "title": "Accompagnement",
+        "description": "Mise en œuvre aux côtés de vos équipes. Conduite du changement, formation, ajustements en cours de route."
+      },
+      {
+        "number": "04",
+        "icon": "Rocket",
+        "title": "Déploiement",
+        "description": "Suivi des résultats et pérennisation. Nous restons mobilisés jusqu'à ce que la stratégie porte ses fruits."
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "PME",
+    "ETI",
+    "Stratégie",
+    "Due diligence",
+    "Revitalisation",
+    "Conseil en stratégie"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Parlons de votre projet",
+    "intro": "Vous avez un projet stratégique ? Une décision d'investissement à éclairer ? Une entreprise à repositionner ?",
+    "introBold": "Premier échange gratuit et confidentiel."
+  },
+  "footer": {
+    "description": "Cabinet de conseil en stratégie pour PME et ETI. Depuis 1990.",
+    "copyright": "Katalyse"
+  }
+}

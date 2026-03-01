@@ -1,0 +1,148 @@
+{
+  "slug": "fidemconseil",
+  "name": "Fidem Conseil",
+  "brandColor": "#1e3a5f",
+  "hero": {
+    "heroVariant": "gradient",
+    "headline": {
+      "line1": "Déléguez votre paie",
+      "line2": "et votre gestion RH.",
+      "line3": ""
+    },
+    "subheadline": "Gestion complète de la paie et assistance juridique pour entreprises et EHPAD.",
+    "subheadlineBold": "Conformité garantie, double contrôle qualité.",
+    "ctaText": "Demander un devis",
+    "badge1": "Double\ncontrôle",
+    "badge2": "Conformité\ngarantie",
+    "cardTitle": "Tarifs transparents",
+    "cardSubtitle": "Dès 12€ HT par bulletin",
+    "caption": "Premier rendez-vous gratuit"
+  },
+  "navigation": {
+    "logoText": "Fidem Conseil",
+    "navLinks": [
+      { "label": "Nos services", "href": "#services" },
+      { "label": "Notre méthode", "href": "#methodologie" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Demander un devis"
+  },
+  "services": {
+    "sectionLabel": "Nos Services",
+    "headline": "Gestion de paie et RH externalisée",
+    "headlineHighlight": "pour entreprises et EHPAD.",
+    "benefitsTitle": "Pourquoi Fidem Conseil ?",
+    "benefits": [
+      {
+        "title": "Double contrôle qualité",
+        "description": "Chaque bulletin est vérifié deux fois. Méthode éprouvée pour minimiser les erreurs."
+      },
+      {
+        "title": "Conformité garantie",
+        "description": "Maîtrise complète des obligations légales. Préparation et représentation lors des inspections."
+      },
+      {
+        "title": "Expertise EHPAD",
+        "description": "Connaissance spécifique des contraintes RH des établissements médico-sociaux."
+      }
+    ],
+    "items": [
+      {
+        "id": "paie",
+        "icon": "FileText",
+        "title": "Gestion de la Paie",
+        "description": "De la paie simple à la gestion RH complète. 3 niveaux de service : Paie Simple (dès 12€ HT), Paie + Assistance RH (dès 19€ HT), ou Gestion RH complète (dès 20€ HT). Double contrôle qualité sur chaque bulletin.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "juridique",
+        "icon": "Scale",
+        "title": "Assistance Juridique RH",
+        "description": "Accompagnement légal complet : contrats de travail (CDI, CDD, apprentissage), gestion des temps (RTT, modulation, travail de nuit), procédures disciplinaires et licenciements, contentieux sociaux.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "documents",
+        "icon": "FileCheck",
+        "title": "Documents Obligatoires",
+        "description": "Mise en conformité complète : registre du personnel (dès la 1ère embauche), DUER (Document Unique d'Évaluation des Risques), règlement intérieur (à partir de 20 salariés), panneau d'affichage conforme.",
+        "cta": "En savoir plus"
+      }
+    ]
+  },
+  "valueProposition": {
+    "headline": "Une expertise RH complète, sans embaucher",
+    "subheadline": "Fidem Conseil prend en charge votre paie et vos obligations légales. Du simple bulletin à la gestion complète des ressources humaines.",
+    "features": [
+      {
+        "icon": "CheckCircle",
+        "title": "Double contrôle",
+        "description": "Chaque bulletin de paie est vérifié deux fois par mois. Une méthode rigoureuse pour garantir l'exactitude."
+      },
+      {
+        "icon": "Shield",
+        "title": "Conformité légale",
+        "description": "Maîtrise complète des obligations légales. Préparation et représentation lors des inspections du travail."
+      },
+      {
+        "icon": "Users",
+        "title": "Expertise EHPAD",
+        "description": "Connaissance approfondie des contraintes spécifiques aux établissements médico-sociaux."
+      },
+      {
+        "icon": "Award",
+        "title": "Tarifs transparents",
+        "description": "Pas de surprises. Tarifs dégressifs et grille tarifaire dédiée pour les associations."
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Méthode",
+    "headline": "Comment nous travaillons",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Search",
+        "title": "Diagnostic",
+        "description": "Analyse de vos besoins RH et de votre conformité actuelle. Identification des risques et des points à améliorer."
+      },
+      {
+        "number": "02",
+        "icon": "ClipboardList",
+        "title": "Mise en place",
+        "description": "Configuration des processus, récupération des dossiers, formation de vos équipes aux nouveaux outils."
+      },
+      {
+        "number": "03",
+        "icon": "FileText",
+        "title": "Production mensuelle",
+        "description": "Traitement de la paie avec double contrôle, gestion des documents obligatoires, assistance RH continue."
+      },
+      {
+        "number": "04",
+        "icon": "UserCheck",
+        "title": "Suivi & Conseil",
+        "description": "Assistance continue, veille juridique, accompagnement lors des contrôles et inspections."
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "Paie",
+    "RH",
+    "Juridique",
+    "EHPAD",
+    "Conformité",
+    "DUER"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Parlons de vos besoins RH",
+    "intro": "Premier rendez-vous gratuit pour faire le point sur votre situation et établir un devis personnalisé.",
+    "introBold": "Réponse sous 24h."
+  },
+  "footer": {
+    "description": "Gestion de paie et assistance juridique RH pour entreprises et EHPAD. Conformité garantie.",
+    "copyright": "Fidem Conseil"
+  }
+}
