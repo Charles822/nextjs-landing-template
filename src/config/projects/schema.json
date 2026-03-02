@@ -3,7 +3,19 @@
   "title": "LanderMachine Project Config",
   "description": "Schema for project configuration used by the LanderMachine demo landing pages. Agents should create or update these files when revamping URLs based on the master template.",
   "type": "object",
-  "required": ["slug", "name", "brandColor", "hero", "navigation", "services", "valueProposition", "methodology", "partnersMarquee", "contact", "footer"],
+  "required": [
+    "slug",
+    "name",
+    "brandColor",
+    "hero",
+    "navigation",
+    "services",
+    "valueProposition",
+    "methodology",
+    "partnersMarquee",
+    "contact",
+    "footer"
+  ],
   "properties": {
     "slug": {
       "type": "string",
@@ -20,76 +32,193 @@
     },
     "hero": {
       "type": "object",
-      "required": ["imageAlt", "headline", "subheadline", "ctaText", "badge1", "badge2"],
+      "required": [
+        "imageAlt",
+        "headline",
+        "subheadline",
+        "ctaText",
+        "badge1",
+        "badge2"
+      ],
       "properties": {
         "image": {
           "type": "string",
           "description": "Path to hero image in public/ (e.g. /hero-acfaty.jpg). Omit for gradient-only hero"
         },
-        "imageAlt": { "type": "string" },
-        "quote": { "type": "string", "description": "Optional quote above headline" },
-        "quoteAuthor": { "type": "string" },
+        "imageAlt": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string",
+          "description": "Optional quote above headline"
+        },
+        "quoteAuthor": {
+          "type": "string"
+        },
         "headline": {
           "type": "object",
-          "required": ["line1", "line2", "line3"],
+          "required": [
+            "line1",
+            "line2",
+            "line3"
+          ],
           "properties": {
-            "line1": { "type": "string" },
-            "line2": { "type": "string" },
-            "line3": { "type": "string" }
+            "line1": {
+              "type": "string"
+            },
+            "line2": {
+              "type": "string"
+            },
+            "line3": {
+              "type": "string"
+            }
           }
         },
-        "subheadline": { "type": "string" },
-        "subheadlineBold": { "type": "string" },
-        "ctaText": { "type": "string" },
-        "badge1": { "type": "string" },
-        "badge2": { "type": "string" },
-        "cardTitle": { "type": "string" },
-        "cardSubtitle": { "type": "string" },
-        "caption": { "type": "string" },
+        "subheadline": {
+          "type": "string"
+        },
+        "subheadlineBold": {
+          "type": "string"
+        },
+        "ctaText": {
+          "type": "string"
+        },
+        "badge1": {
+          "type": "string"
+        },
+        "badge2": {
+          "type": "string"
+        },
+        "cardTitle": {
+          "type": "string"
+        },
+        "cardSubtitle": {
+          "type": "string"
+        },
+        "caption": {
+          "type": "string"
+        },
         "heroVariant": {
           "type": "string",
-          "enum": ["image", "gradient"],
+          "enum": [
+            "image",
+            "gradient"
+          ],
           "description": "Use 'gradient' for hero without image (solid gradient background)"
         }
       }
     },
     "navigation": {
       "type": "object",
-      "required": ["logoText", "navLinks", "ctaText"],
+      "required": [
+        "logoText",
+        "navLinks",
+        "ctaText"
+      ],
       "properties": {
-        "logoText": { "type": "string" },
-        "logoImage": { "type": "string", "description": "Path to logo in public/ (optional)" },
+        "logoText": {
+          "type": "string"
+        },
+        "logoImage": {
+          "type": "string",
+          "description": "Path to logo in public/ (optional)"
+        },
         "navLinks": {
           "type": "array",
-          "items": { "type": "object", "required": ["label", "href"], "properties": { "label": { "type": "string" }, "href": { "type": "string" } } }
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "href"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "href": {
+                "type": "string"
+              }
+            }
+          }
         },
-        "ctaText": { "type": "string" }
+        "ctaText": {
+          "type": "string"
+        }
       }
     },
     "services": {
       "type": "object",
-      "required": ["sectionLabel", "headline", "headlineHighlight", "benefitsTitle", "benefits", "items"],
+      "required": [
+        "sectionLabel",
+        "headline",
+        "headlineHighlight",
+        "benefitsTitle",
+        "benefits",
+        "items"
+      ],
       "properties": {
-        "sectionLabel": { "type": "string" },
-        "headline": { "type": "string" },
-        "headlineHighlight": { "type": "string" },
-        "benefitsTitle": { "type": "string" },
+        "sectionLabel": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "headlineHighlight": {
+          "type": "string"
+        },
+        "benefitsTitle": {
+          "type": "string"
+        },
         "benefits": {
           "type": "array",
-          "items": { "type": "object", "required": ["title", "description"], "properties": { "title": { "type": "string" }, "description": { "type": "string" } } }
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "description"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
         },
         "items": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["id", "icon", "title", "description", "cta"],
+            "required": [
+              "id",
+              "icon",
+              "title",
+              "description",
+              "cta"
+            ],
             "properties": {
-              "id": { "type": "string" },
-              "icon": { "type": "string", "description": "Lucide icon name (e.g. Car, Users, Search)" },
-              "image": { "type": "string", "description": "Path to service image. Omit for icon-only cards" },
-              "title": { "type": "string" },
-              "description": { "type": "string" },
-              "cta": { "type": "string" }
+              "id": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string",
+                "description": "Lucide icon name (e.g. Car, Users, Search)"
+              },
+              "image": {
+                "type": "string",
+                "description": "Path to service image. Omit for icon-only cards"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "cta": {
+                "type": "string"
+              }
             }
           }
         }
@@ -97,49 +226,302 @@
     },
     "valueProposition": {
       "type": "object",
-      "required": ["headline", "subheadline", "features"],
+      "required": [
+        "headline",
+        "subheadline",
+        "features"
+      ],
       "properties": {
-        "headline": { "type": "string" },
-        "subheadline": { "type": "string" },
+        "headline": {
+          "type": "string"
+        },
+        "subheadline": {
+          "type": "string"
+        },
         "features": {
           "type": "array",
-          "items": { "type": "object", "required": ["icon", "title", "description"], "properties": { "icon": { "type": "string" }, "title": { "type": "string" }, "description": { "type": "string" } } }
+          "items": {
+            "type": "object",
+            "required": [
+              "icon",
+              "title",
+              "description"
+            ],
+            "properties": {
+              "icon": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
         }
       }
     },
     "methodology": {
       "type": "object",
-      "required": ["sectionLabel", "headline", "steps"],
+      "required": [
+        "sectionLabel",
+        "headline",
+        "steps"
+      ],
       "properties": {
-        "sectionLabel": { "type": "string" },
-        "headline": { "type": "string" },
-        "variant": { "type": "string", "enum": ["standard", "checklist"], "default": "standard" },
+        "sectionLabel": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "checklist"
+          ],
+          "default": "standard"
+        },
         "steps": {
           "type": "array",
-          "items": { "type": "object", "required": ["number", "icon", "title", "description"], "properties": { "number": { "type": "string" }, "icon": { "type": "string" }, "title": { "type": "string" }, "description": { "type": "string" } } }
+          "items": {
+            "type": "object",
+            "required": [
+              "number",
+              "icon",
+              "title",
+              "description"
+            ],
+            "properties": {
+              "number": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
         },
-        "checklistItems": { "type": "array", "items": { "type": "string" }, "description": "Required when variant is checklist" }
+        "checklistItems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Required when variant is checklist"
+        }
       }
     },
-    "partnersMarquee": { "type": "array", "items": { "type": "string" } },
+    "partnersMarquee": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "partners": {
+      "type": "object",
+      "description": "Partners with logos (optional). Rendered in dedicated section when present.",
+      "properties": {
+        "sectionLabel": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string",
+                "description": "Path to logo in public/"
+              },
+              "url": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "testimonials": {
+      "type": "object",
+      "description": "Testimonials section (optional)",
+      "properties": {
+        "sectionLabel": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "quote",
+              "author"
+            ],
+            "properties": {
+              "quote": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "company": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "offers": {
+      "type": "object",
+      "description": "Offers section (optional, distinct from services)",
+      "properties": {
+        "sectionLabel": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "description",
+              "cta"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "cta": {
+                "type": "string"
+              },
+              "href": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "blog": {
+      "type": "object",
+      "description": "Blog teasers section (optional)",
+      "properties": {
+        "sectionLabel": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "excerpt"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "excerpt": {
+                "type": "string"
+              },
+              "image": {
+                "type": "string"
+              },
+              "href": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
     "contact": {
       "type": "object",
-      "required": ["sectionLabel", "headline", "intro"],
+      "required": [
+        "sectionLabel",
+        "headline",
+        "intro"
+      ],
       "properties": {
-        "sectionLabel": { "type": "string" },
-        "headline": { "type": "string" },
-        "intro": { "type": "string" },
-        "introBold": { "type": "string" },
-        "email": { "type": "string" },
-        "phone": { "type": "string" }
+        "sectionLabel": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "string"
+        },
+        "intro": {
+          "type": "string"
+        },
+        "introBold": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        }
       }
     },
     "footer": {
       "type": "object",
-      "required": ["description", "copyright"],
+      "required": [
+        "description",
+        "copyright"
+      ],
       "properties": {
-        "description": { "type": "string" },
-        "copyright": { "type": "string" }
+        "description": {
+          "type": "string"
+        },
+        "copyright": {
+          "type": "string"
+        }
       }
     }
   }

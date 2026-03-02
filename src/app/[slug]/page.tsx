@@ -11,6 +11,10 @@ import ValueProposition from "@/components/ValueProposition";
 import Methodology from "@/components/Methodology";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Partners from "@/components/Partners";
+import Testimonials from "@/components/Testimonials";
+import Offers from "@/components/Offers";
+import Blog from "@/components/Blog";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -39,6 +43,10 @@ export default async function ProjectPage({ params }: PageProps) {
       <ValueProposition config={config} />
       <Services config={config} />
       <Methodology config={config} />
+      {config.offers && <Offers config={config} />}
+      {config.partners && <Partners config={config} />}
+      {config.testimonials && <Testimonials config={config} />}
+      {config.blog && <Blog config={config} />}
       <Contact config={config} />
       <Footer config={config} />
     </main>

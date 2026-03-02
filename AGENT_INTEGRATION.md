@@ -82,6 +82,34 @@ python scripts/generate-image.py "Taxi car" service-taxi --slug acfaty
 
 **Config paths:** After generation, use `/{slug}/filename.png` in your JSON config (e.g. `"/acfaty/hero-acfaty.png"`).
 
+## Asset Download (fetch-assets.py)
+
+Use `scripts/fetch-assets.py` to download partner logos, blog images, and other assets from URLs listed in `projects/{slug}/assets.md`. Used in the landing transformation workflow (Step 1.5).
+
+**Usage:**
+```bash
+cd landerMachine  # or workspace root
+python scripts/fetch-assets.py --slug {slug}
+```
+
+**Behavior:**
+- Reads `projects/{slug}/assets.md` for URLs (lines starting with `- https://...`)
+- Downloads each to `projects/{slug}/assets/{slug}-{index}.{ext}`
+- Writes `projects/{slug}/assets-map.json` mapping original URLs to local paths
+- Use `--no-map` to skip writing the mapping file
+
+**Dependencies:** `requests` (in `scripts/requirements.txt`)
+
+## Optional Config Sections
+
+The template supports optional sections that render when present in the JSON config:
+- **partners** – Partner logos with optional name, description, URL
+- **testimonials** – Quote cards (quote, author, company, role)
+- **offers** – Offer cards (title, description, CTA, href)
+- **blog** – Blog teasers (title, excerpt, image, href, date)
+
+See `docs/SKILL-landing-transformation.md` for schema examples.
+
 ## Validation
 
 After creating or updating a config, run `npm run build` to ensure:

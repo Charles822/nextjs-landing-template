@@ -61,6 +61,30 @@ export interface ProjectConfig {
     checklistItems?: string[];
   };
   partnersMarquee: string[];
+  /** Partners with logos (upgrade from text-only partnersMarquee). Rendered in dedicated Partners section. */
+  partners?: {
+    sectionLabel?: string;
+    headline?: string;
+    items: { name: string; logo?: string; url?: string; description?: string }[];
+  };
+  /** Testimonials section */
+  testimonials?: {
+    sectionLabel?: string;
+    headline?: string;
+    items: { quote: string; author: string; company?: string; role?: string }[];
+  };
+  /** Offers section (distinct from services) */
+  offers?: {
+    sectionLabel?: string;
+    headline?: string;
+    items: { id: string; title: string; description: string; cta: string; href?: string }[];
+  };
+  /** Blog teasers section */
+  blog?: {
+    sectionLabel?: string;
+    headline?: string;
+    items: { id: string; title: string; excerpt: string; image?: string; href?: string; date?: string }[];
+  };
   contact: {
     sectionLabel: string;
     headline: string;

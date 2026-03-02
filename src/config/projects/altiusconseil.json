@@ -22,17 +22,48 @@
   "navigation": {
     "logoText": "Altius Conseil",
     "navLinks": [
-      { "label": "Nos formations", "href": "#services" },
-      { "label": "Qualiopi", "href": "#services" },
-      { "label": "Notre méthode", "href": "#methodologie" },
+      { "label": "Nos formations", "href": "#offers" },
+      { "label": "Nos expertises", "href": "#services" },
+      { "label": "Témoignages", "href": "#testimonials" },
       { "label": "Contact", "href": "#contact" }
     ],
     "ctaText": "Nous contacter"
   },
+  "offers": {
+    "sectionLabel": "Nos Formations",
+    "headline": "Développez vos compétences",
+    "headlineHighlight": "et celles de vos équipes.",
+    "items": [
+      {
+        "id": "management",
+        "icon": "Users",
+        "title": "Formation Management",
+        "description": "Dans un contexte professionnel en constante évolution, les managers doivent faire face à des défis variés et complexes. Piloter, guider, animer, recadrer sans démotiver et faire grandir les équipes.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      },
+      {
+        "id": "efficacite",
+        "icon": "Target",
+        "title": "Efficacité Professionnelle",
+        "description": "Les organisations, l'activité, les marchés évoluent constamment et génèrent une pression accrue sur les collaborateurs. Développez les compétences individuelles et collectives.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      },
+      {
+        "id": "commercial",
+        "icon": "LineChart",
+        "title": "Développement Commercial",
+        "description": "Dans un environnement sous tension, avec des clients de plus en plus exigeants, la performance de vos équipes commerciales est un impératif. Boostez vos résultats commerciaux.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      }
+    ]
+  },
   "services": {
     "sectionLabel": "Nos Expertises",
-    "headline": "Formation et accompagnement",
-    "headlineHighlight": "pour aller plus haut.",
+    "headline": "Accompagnement sur mesure",
+    "headlineHighlight": "pour votre réussite.",
     "benefitsTitle": "Pourquoi Altius Conseil ?",
     "benefits": [
       {
@@ -50,14 +81,6 @@
     ],
     "items": [
       {
-        "id": "formation",
-        "icon": "Users",
-        "image": "/altiusconseil/service-formation.png",
-        "title": "Formation Professionnelle",
-        "description": "Management : piloter, guider, animer des équipes. Efficacité professionnelle : gérer la pression et les évolutions. Développement commercial : répondre à des clients exigeants. Interventions directement applicables sur le terrain.",
-        "cta": "En savoir plus"
-      },
-      {
         "id": "qualiopi",
         "icon": "Award",
         "image": "/altiusconseil/service-qualiopi.png",
@@ -71,6 +94,14 @@
         "image": "/altiusconseil/service-creation.png",
         "title": "Création d'Organisme",
         "description": "Accompagnement complet de la conception au lancement : business plan, choix du statut, structuration pédagogique, dossier de déclaration, outils de gestion Qualiopi. Marché de 31,8 Milliards €, 126 000 organismes en France.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "formation",
+        "icon": "GraduationCap",
+        "image": "/altiusconseil/service-formation.png",
+        "title": "Concevoir et Animer",
+        "description": "La formation de professionnels nécessite de favoriser l'autonomie, la responsabilisation et l'engagement actif des apprenants. Montez en compétences pédagogiques.",
         "cta": "En savoir plus"
       }
     ]
@@ -139,6 +170,41 @@
         "icon": "Award",
         "title": "Certification",
         "description": "Préparation à l'audit (audit blanc), obtention de la certification et autonomie pour le suivi qualité."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "Témoignages",
+    "headline": "Ce qu'en disent nos clients",
+    "items": [
+      {
+        "quote": "Très bonne formation dynamique et participative. Christophe est un formateur à l'écoute et avec une bonne expérience de son sujet.",
+        "author": "Nacer",
+        "role": "Stagiaire",
+        "date": "mars 2024"
+      },
+      {
+        "quote": "Formation très enrichissante et formateur à l'écoute et très sympathique.",
+        "author": "Edwige Eyoum",
+        "role": "Stagiaire",
+        "date": "novembre 2023"
+      },
+      {
+        "quote": "Accompagnement pour une certification Qualiopi excellent sur le fond et la forme. Merci Christophe !",
+        "author": "Walid Gaaloul",
+        "company": "Organisme de formation",
+        "date": "octobre 2023"
+      },
+      {
+        "quote": "Excellente formation, dynamique et intéressante",
+        "author": "Nicolas Gallardo",
+        "date": "octobre 2023"
+      },
+      {
+        "quote": "Formation 'S'approprier le rôle de manager' très qualitative. Une belle expérience, de nombreux outils acquis. Une formation vraiment utile, motivante, inspirante et un formateur à l'écoute, qui sait ce dont il parle. Je recommande ++.",
+        "author": "Jérémy Hallé",
+        "role": "Manager",
+        "date": "décembre 2022"
       }
     ]
   },
