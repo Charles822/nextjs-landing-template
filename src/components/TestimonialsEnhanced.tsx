@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import type { ProjectConfig } from "@/types/project";
 import { Quote, User } from "lucide-react";
 
@@ -10,7 +13,7 @@ export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedPro
   if (!testimonials?.items?.length) return null;
 
   const items = testimonials.items.slice(0, 3);
-  const rotations = ["-10deg", "0deg", "10deg"];
+  const rotations = [-10, 0, 10];
 
   return (
     <section id="testimonials" className="sm:py-24 pt-16 pb-16 bg-white border-t border-slate-100">
@@ -33,7 +36,7 @@ export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedPro
       <div className="relative flex items-center justify-center py-12 sm:py-20 min-h-[450px] overflow-hidden">
         <div className="container max-w-full flex justify-center items-center flex-wrap gap-4 px-4">
           {items.map((item, index) => (
-            <div
+            <motion.div
               key={index}
               className="relative w-[340px] h-[340px] flex justify-center items-center shrink-0"
               style={{
@@ -42,7 +45,15 @@ export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedPro
                 boxShadow: "rgba(0, 0, 0, 0.1) 0px 25px 25px",
                 borderRadius: "1rem",
                 backdropFilter: "blur(10px)",
-                transform: `rotate(${rotations[index % rotations.length]})`,
+              }}
+              initial={{ opacity: 0, y: 24, rotate: rotations[index % rotations.length] }}
+              whileInView={{ opacity: 1, y: 0, rotate: rotations[index % rotations.length] }}
+              whileHover={{ y: -8, rotate: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.4,
+                delay: index * 0.1,
+                ease: [0.22, 1, 0.36, 1],
               }}
             >
               <div className="absolute inset-4 rounded-xl bg-white text-neutral-900 shadow-2xl ring-1 ring-neutral-200 overflow-hidden">
@@ -78,7 +89,7 @@ export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedPro
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

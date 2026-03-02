@@ -11,7 +11,7 @@ export default function ValueProposition({ config }: ValuePropositionProps) {
   return (
     <section className="bg-[#FAFAFA] border-slate-100 border-t py-16 lg:px-12 px-6">
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-slate-900 mb-6">
+        <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-slate-900 mb-6 font-display">
           {valueProposition.headline}
         </h2>
         <p className="text-lg text-slate-500">{valueProposition.subheadline}</p>

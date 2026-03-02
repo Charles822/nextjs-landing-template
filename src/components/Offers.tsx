@@ -21,7 +21,7 @@ export default function Offers({ config }: OffersProps) {
           </p>
         )}
         {offers.headline && (
-          <h2 className="text-2xl lg:text-3xl font-light text-neutral-800 leading-snug tracking-tight mb-12">
+          <h2 className="text-2xl lg:text-3xl font-light text-neutral-800 leading-snug tracking-tight mb-12 font-display">
             {offers.headline}
           </h2>
         )}
@@ -29,7 +29,7 @@ export default function Offers({ config }: OffersProps) {
           {offers.items.map((offer) => (
             <div
               key={offer.id}
-              className="bg-slate-50/80 rounded-2xl border border-slate-100 p-6 flex flex-col hover:border-slate-200 hover:bg-white transition-colors duration-300"
+              className="bg-slate-50/80 rounded-2xl border border-slate-100 p-6 flex flex-col hover:border-slate-200 hover:bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">
                 {offer.title}

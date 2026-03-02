@@ -1,12 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Mail, Phone } from "lucide-react";
+import { motion } from "motion/react";
+import { Send, Mail, Phone, Loader2, CheckCircle } from "lucide-react";
 import type { ProjectConfig } from "@/types/project";
 
 interface ContactProps {
   config: ProjectConfig;
 }
+
+type SubmitStatus = "idle" | "success" | "error";
 
 export default function Contact({ config }: ContactProps) {
   const [formData, setFormData] = useState({
@@ -16,10 +19,22 @@ export default function Contact({ config }: ContactProps) {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1200));
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", company: "", subject: "", message: "" });
+    } catch {
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const { brandColor, contact } = config;
@@ -35,7 +50,7 @@ export default function Contact({ config }: ContactProps) {
             >
               {contact.sectionLabel}
             </h3>
-            <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-slate-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-slate-900 mb-6 font-display">
               {contact.headline}
             </h2>
             <p className="text-lg text-slate-500 mb-8">{contact.intro}</p>
@@ -149,14 +164,38 @@ export default function Contact({ config }: ContactProps) {
                 />
               </div>
 
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-4 text-white font-medium rounded-lg transition-colors hover:opacity-90"
-                style={{ backgroundColor: brandColor }}
-              >
-                <Send className="w-5 h-5" />
-                Envoyer ma demande
-              </button>
+              {submitStatus === "success" ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="flex items-center justify-center gap-2 px-6 py-4 text-white font-medium rounded-lg"
+                  style={{ backgroundColor: brandColor }}
+                >
+                  <CheckCircle className="w-5 h-5" />
+                  Message envoyé
+                </motion.div>
+              ) : (
+                <motion.button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full flex items-center justify-center gap-2 px-6 py-4 text-white font-medium rounded-lg transition-colors hover:opacity-90 disabled:opacity-70 disabled:cursor-not-allowed"
+                  style={{ backgroundColor: brandColor }}
+                  whileHover={!isSubmitting ? { scale: 1.02 } : undefined}
+                  whileTap={!isSubmitting ? { scale: 0.98 } : undefined}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      Envoi en cours...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5" />
+                      Envoyer ma demande
+                    </>
+                  )}
+                </motion.button>
+              )}
             </form>
           </div>
         </div>

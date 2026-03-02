@@ -1,10 +1,20 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "motion/react";
 import { ArrowRight, Check, Award } from "lucide-react";
 import type { ProjectConfig } from "@/types/project";
 import PartnersMarquee from "./PartnersMarquee";
 import ServiceImageCarousel from "./ServiceImageCarousel";
+
+const staggerVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+  },
+};
 
 interface HeroProps {
   config: ProjectConfig;
@@ -24,17 +34,29 @@ export default function Hero({ config }: HeroProps) {
 
   return (
     <section className="grid lg:grid-cols-12 min-h-[640px]">
-      <div className="lg:col-span-7 lg:px-12 flex flex-col z-10 pt-16 pr-6 pb-12 pl-6 relative justify-center">
+      <motion.div
+        className="lg:col-span-7 lg:px-12 flex flex-col z-10 pt-16 pr-6 pb-12 pl-6 relative justify-center"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+          },
+        }}
+      >
         {hero.quote && (
-          <div className="mb-6">
-            <p className="text-lg italic text-[#7c878e] font-light">"{hero.quote}"</p>
+          <motion.div className="mb-6" variants={staggerVariants}>
+            <p className="text-lg italic text-[#7c878e] font-light font-serif-custom">"{hero.quote}"</p>
             {hero.quoteAuthor && (
               <p className="text-sm text-[#b1b1b1] mt-2">{hero.quoteAuthor}</p>
             )}
-          </div>
+          </motion.div>
         )}
 
-        <h1 className="text-5xl lg:text-7xl tracking-tighter leading-[1.05] mb-8 text-neutral-900">
+        <motion.h1
+          className="text-5xl lg:text-7xl tracking-tighter leading-[1.05] mb-8 text-neutral-900"
+          variants={staggerVariants}
+        >
           <span className="font-light block text-slate-600">{hero.headline.line1}</span>
           <span
             className="font-serif-custom italic font-medium block mt-0"
@@ -45,30 +67,38 @@ export default function Hero({ config }: HeroProps) {
           <span className="font-light block text-slate-600 text-3xl lg:text-5xl mt-2">
             {hero.headline.line3}
           </span>
-        </h1>
+        </motion.h1>
 
-        <p className="text-lg text-neutral-500 max-w-xl leading-relaxed mb-10 font-normal">
+        <motion.p
+          className="text-lg text-neutral-500 max-w-xl leading-relaxed mb-10 font-normal"
+          variants={staggerVariants}
+        >
           {hero.subheadline}{" "}
           {hero.subheadlineBold && (
             <span className="font-medium text-neutral-800">{hero.subheadlineBold}</span>
           )}
-        </p>
+        </motion.p>
 
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-16">
-          <a
+        <motion.div
+          className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-16"
+          variants={staggerVariants}
+        >
+          <motion.a
             href="#contact"
             className="group font-medium text-white rounded-lg pt-4 pr-8 pb-4 pl-8 relative transition-all duration-300 overflow-hidden hover:opacity-90"
             style={{
               backgroundColor: brandColor,
               boxShadow: `0 18px 40px -15px rgba(${rgb}, 0.5), inset 0 2px 4px rgba(255,255,255,0.2)`,
             }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             <div className="group-hover:translate-y-0 group-hover:opacity-0 transition-all duration-300 bg-white/10 absolute top-0 right-0 bottom-0 left-0 translate-y-full" />
             <span className="flex items-center gap-2 relative">
               {hero.ctaText}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </span>
-          </a>
+          </motion.a>
 
           <div className="flex items-center gap-4">
             <div className="text-xs font-medium text-neutral-600 flex gap-4">
@@ -92,10 +122,12 @@ export default function Hero({ config }: HeroProps) {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <PartnersMarquee config={config} />
-      </div>
+        <motion.div variants={staggerVariants}>
+          <PartnersMarquee config={config} />
+        </motion.div>
+      </motion.div>
 
       <div
         className={`lg:col-span-5 lg:h-auto overflow-hidden w-full h-[500px] relative ${

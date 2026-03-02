@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -13,8 +12,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Newsreader', serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
   --color-brand-50: var(--brand-50);
   --color-brand-100: var(--brand-100);
   --color-brand-500: var(--brand-500);
@@ -24,11 +23,29 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-.font-serif-custom {
-  font-family: 'Newsreader', serif;
+.font-serif-custom,
+.font-display {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Typography scale */
+.text-display {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.text-headline {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.text-body {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Custom scrollbar hide */

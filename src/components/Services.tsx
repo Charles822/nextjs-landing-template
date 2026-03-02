@@ -26,7 +26,7 @@ export default function Services({ config }: ServicesProps) {
           >
             {services.sectionLabel}
           </h3>
-          <p className="text-2xl lg:text-3xl font-light text-neutral-800 leading-snug tracking-tight max-w-3xl">
+          <p className="text-2xl lg:text-3xl font-light text-neutral-800 leading-snug tracking-tight max-w-3xl font-display">
             {services.headline}{" "}
             <span style={{ color: brandColor }} className="font-medium">
               {services.headlineHighlight}

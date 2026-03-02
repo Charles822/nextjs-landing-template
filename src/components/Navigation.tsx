@@ -41,7 +41,7 @@ export default function Navigation({ config }: NavigationProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                className="text-sm text-slate-600 hover:text-slate-900 hover:underline underline-offset-4 transition-colors duration-200"
                 style={{ ["--hover-color" as string]: brandColor }}
               >
                 {link.label}

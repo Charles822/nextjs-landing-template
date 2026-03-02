@@ -85,7 +85,7 @@ export default function Methodology({ config }: MethodologyProps) {
             </div>
 
             <div className="flex flex-col gap-8 justify-center">
-              <h2 className="text-4xl font-medium tracking-tight text-neutral-900 leading-tight">
+              <h2 className="text-4xl font-medium tracking-tight text-neutral-900 leading-tight font-display">
                 {methodology.headline.includes(" en ") ? (
                   <>
                     {methodology.headline.split(" en ")[0]}
@@ -142,7 +142,7 @@ export default function Methodology({ config }: MethodologyProps) {
           >
             {methodology.sectionLabel}
           </h3>
-          <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-slate-900">
+          <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-slate-900 font-display">
             {methodology.headline}
           </h2>
         </div>

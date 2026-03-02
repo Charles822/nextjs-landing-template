@@ -27,6 +27,7 @@
       { "label": "Nos formations", "href": "#offers" },
       { "label": "Nos expertises", "href": "#services" },
       { "label": "Témoignages", "href": "#testimonials" },
+      { "label": "Actualités", "href": "#blog" },
       { "label": "Contact", "href": "#contact" }
     ],
     "ctaText": "Nous contacter"
@@ -259,6 +260,37 @@
     ]
   },
   "partnersMarquee": [],
+  "blog": {
+    "sectionLabel": "Actualités",
+    "headline": "Les derniers articles",
+    "subheadline": "Retrouvez nos dernières publications et actualités.",
+    "items": [
+      {
+        "id": "blog-1",
+        "title": "Un accompagnement décisif pour obtenir notre certification RS",
+        "excerpt": "En tant que professionnel de la production artistique, j'ai d'abord tenté seul d'obtenir la certification « Promouvoir une activité artistique visuelle » auprès de France Compétences. Après le dépôt d'un premier dossier, refusé pour des raisons techniques…",
+        "image": "/altiusconseil/blog/blog-certification-rs.jpg",
+        "href": "https://www.altiusconseil.fr/un-accompagnement-decisif-pour-obtenir-notre-certification-rs/",
+        "date": "oct. 2025"
+      },
+      {
+        "id": "blog-2",
+        "title": "Maîtriser les Certifications Professionnelles (RS & RNCP) : Clés et Stratégies pour Réussir",
+        "excerpt": "Découvrez les enjeux, les étapes clés et les bonnes pratiques pour obtenir une certification professionnelle reconnue par France Compétences. Ce webinaire vous guide pas à pas, de la faisabilité à l'habilitation…",
+        "image": "/altiusconseil/blog/blog-maitriser-certifications.jpg",
+        "href": "https://www.altiusconseil.fr/maitriser-les-certifications-professionnelles-rs-rncp-cles-et-strategies-pour-reussir/",
+        "date": "oct. 2025"
+      },
+      {
+        "id": "blog-3",
+        "title": "L'Équipage en + obtient la certification CPF Broderie au Fil d'Or avec l'accompagnement d'Altius Conseil",
+        "excerpt": "L'Equipage en + que je représente tient à vous remercier chaleureusement pour votre accompagnement lors de notre démarche d'obtention de la certification CPF de Broderie au Fil d'Or. Un travail d'expert aux doigts de…",
+        "image": "/altiusconseil/blog/blog-equipage-broderie.jpg",
+        "href": "https://www.altiusconseil.fr/equipage-certification-cpf-broderie-fil-or/",
+        "date": "oct. 2025"
+      }
+    ]
+  },
   "contact": {
     "sectionLabel": "Contact",
     "headline": "Prêt à aller plus haut ?",
