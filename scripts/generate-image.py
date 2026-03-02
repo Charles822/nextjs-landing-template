@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-OpenRouter image generation via Google Gemini 2.5 Flash Image.
+OpenRouter image generation via Google Gemini 3.1 Flash Image.
 Outputs PNG to landerMachine/public/ or public/{slug}/.
 """
 
@@ -10,6 +10,8 @@ import sys
 import json
 import base64
 import argparse
+import io
+from math import ceil
 from pathlib import Path
 
 try:
@@ -25,14 +27,26 @@ except ImportError:
 
 # Script lives in landerMachine/scripts/; public is landerMachine/public/
 SCRIPT_DIR = Path(__file__).resolve().parent
-DEFAULT_PUBLIC_DIR = SCRIPT_DIR.parent / "public"
+PROJECT_ROOT = SCRIPT_DIR.parent  # landerMachine/
+DEFAULT_PUBLIC_DIR = PROJECT_ROOT / "public"
 
-# Load .env from landerMachine root (parent of scripts/)
+# Load .env from project root (Next.js puts .env at project root)
+# .env first, then .env.local overrides
 if load_dotenv:
-    load_dotenv(SCRIPT_DIR.parent / ".env")
+    for base in (PROJECT_ROOT, Path.cwd()):
+        env_file = base / ".env"
+        if env_file.exists():
+            load_dotenv(env_file)
+        local_file = base / ".env.local"
+        if local_file.exists():
+            load_dotenv(local_file, override=True)
+else:
+    print("⚠️  python-dotenv not installed – .env will NOT be auto-loaded.")
+    print("   Install: pip install python-dotenv")
+    print("   Or run:  source .env  &&  python3 scripts/generate-image.py ...")
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = "google/gemini-2.5-flash-image"
+MODEL = "google/gemini-3.1-flash-image-preview"
 
 
 def extract_base64_from_data_url(data_url: str) -> bytes:
@@ -137,7 +151,7 @@ def generate_image(prompt: str, api_key: str) -> bytes | None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generate images via OpenRouter (Gemini 2.5 Flash Image). Outputs PNG."
+        description="Generate images via OpenRouter (Gemini 3.1 Flash Image). Outputs PNG."
     )
     parser.add_argument("prompt", help="Image generation prompt")
     parser.add_argument(
@@ -158,11 +172,20 @@ def main() -> None:
         default="png",
         help="Output format (default: png; Gemini returns PNG)",
     )
+    parser.add_argument(
+        "--resize",
+        metavar="WIDTHxHEIGHT",
+        help="Resize/crop output to exact dimensions (e.g. 1200x800 for hero 3:2). Center-crops to fill.",
+    )
     args = parser.parse_args()
 
     api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
-        print("❌ Error: OPENROUTER_API_KEY environment variable not set")
+        print("❌ Error: OPENROUTER_API_KEY not set")
+        print("   Tried .env at:", PROJECT_ROOT / ".env", "(exists:" + str((PROJECT_ROOT / ".env").exists()) + ")")
+        print("   Tried .env at:", Path.cwd() / ".env", "(exists:" + str((Path.cwd() / ".env").exists()) + ")")
+        print("   Fix: Add OPENROUTER_API_KEY to .env in project root, or run:")
+        print("        export OPENROUTER_API_KEY=your_key")
         sys.exit(1)
 
     # Resolve output path
@@ -189,6 +212,32 @@ def main() -> None:
     image_bytes = generate_image(args.prompt, api_key)
     if not image_bytes:
         sys.exit(1)
+
+    # Optional: resize/crop to exact dimensions (e.g. 1200x800 for hero)
+    if args.resize:
+        try:
+            w, h = map(int, args.resize.lower().split("x"))
+        except (ValueError, AttributeError):
+            print(f"❌ Invalid --resize: expected WIDTHxHEIGHT, got {args.resize}")
+            sys.exit(1)
+        try:
+            from PIL import Image
+            img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+            orig_w, orig_h = img.size
+            # Scale to cover target (object-cover style), then center-crop
+            scale = max(w / orig_w, h / orig_h)
+            new_w = max(w, ceil(orig_w * scale))
+            new_h = max(h, ceil(orig_h * scale))
+            img = img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+            left = (new_w - w) // 2
+            top = (new_h - h) // 2
+            img = img.crop((left, top, left + w, top + h))
+            buf = io.BytesIO()
+            img.save(buf, format="PNG" if ext == "png" else "JPEG", quality=90)
+            image_bytes = buf.getvalue()
+        except ImportError:
+            print("❌ Pillow required for --resize. Run: pip install Pillow")
+            sys.exit(1)
 
     with open(output_file, "wb") as f:
         f.write(image_bytes)

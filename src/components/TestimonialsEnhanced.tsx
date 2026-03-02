@@ -16,8 +16,8 @@ export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedPro
   const rotations = [-10, 0, 10];
 
   return (
-    <section id="testimonials" className="sm:py-24 pt-16 pb-16 bg-white border-t border-slate-100">
-      <div className="mb-12 text-center px-6">
+    <section id="testimonials" className="sm:py-16 pt-12 pb-12 bg-white border-t border-slate-100">
+      <div className="mb-8 text-center px-6">
         {testimonials.sectionLabel && (
           <p
             className="text-xs uppercase tracking-widest mb-2 font-medium"
@@ -33,16 +33,16 @@ export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedPro
         )}
       </div>
 
-      <div className="relative flex items-center justify-center py-12 sm:py-20 min-h-[450px] overflow-hidden">
-        <div className="container max-w-full flex justify-center items-center flex-wrap gap-4 px-4">
+      <div className="relative flex items-center justify-center py-8 sm:py-12 min-h-[280px] overflow-hidden">
+        <div className="container max-w-full flex justify-center items-center flex-wrap gap-3 px-4">
           {items.map((item, index) => (
             <motion.div
               key={index}
-              className="relative w-[340px] h-[340px] flex justify-center items-center shrink-0"
+              className="relative w-[280px] h-[280px] flex justify-center items-center shrink-0"
               style={{
                 background: "linear-gradient(rgba(255, 255, 255, 0.1), transparent)",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
-                boxShadow: "rgba(0, 0, 0, 0.1) 0px 25px 25px",
+                boxShadow: "rgba(0, 0, 0, 0.08) 0px 16px 20px",
                 borderRadius: "1rem",
                 backdropFilter: "blur(10px)",
               }}
@@ -56,18 +56,18 @@ export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedPro
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <div className="absolute inset-4 rounded-xl bg-white text-neutral-900 shadow-2xl ring-1 ring-neutral-200 overflow-hidden">
-                <div className="p-6 h-full flex flex-col">
+              <div className="absolute inset-3 rounded-xl bg-white text-neutral-900 shadow-xl ring-1 ring-neutral-200 overflow-hidden">
+                <div className="p-4 h-full flex flex-col">
                   <div
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-lg bg-neutral-100 ring-1 ring-neutral-200 mb-4"
+                    className="inline-flex items-center justify-center h-7 w-7 rounded-lg bg-neutral-100 ring-1 ring-neutral-200 mb-3"
                     style={{ color: brandColor }}
                   >
-                    <Quote className="h-4 w-4 text-neutral-700" />
+                    <Quote className="h-3 w-3 text-neutral-700" />
                   </div>
-                  <p className="text-sm leading-relaxed text-neutral-900 mb-4 flex-1 line-clamp-4">
+                  <p className="text-sm leading-relaxed text-neutral-900 mb-3 flex-1 line-clamp-3">
                     &ldquo;{item.quote}&rdquo;
                   </p>
-                  <div className="pt-3 border-t border-neutral-200 flex items-center justify-between gap-2">
+                  <div className="pt-2 border-t border-neutral-200 flex items-center justify-between gap-2">
                     <div className="flex items-center gap-2 min-w-0">
                       <div
                         className="h-6 w-6 rounded-full flex items-center justify-center shrink-0 text-neutral-500 bg-neutral-100"

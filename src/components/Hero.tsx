@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import { ArrowRight, Check, Award } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import type { ProjectConfig } from "@/types/project";
 import PartnersMarquee from "./PartnersMarquee";
-import ServiceImageCarousel from "./ServiceImageCarousel";
+import HeroFloatingCard from "./HeroFloatingCard";
 
 const staggerVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -64,6 +64,12 @@ export default function Hero({ config }: HeroProps) {
           >
             {hero.headline.line2}
           </span>
+          {hero.headline.line2 && (
+            <span
+              className="block w-8 h-0.5 rounded-full mb-2"
+              style={{ backgroundColor: brandColor }}
+            />
+          )}
           <span className="font-light block text-slate-600 text-3xl lg:text-5xl mt-2">
             {hero.headline.line3}
           </span>
@@ -136,38 +142,29 @@ export default function Hero({ config }: HeroProps) {
       >
         {useGradient ? (
           <div
-            className="w-full h-full bg-center bg-cover"
+            className="w-full h-full relative"
             style={{
               backgroundImage: `linear-gradient(135deg, ${brandColor} 0%, ${brandColor}dd 50%, ${brandColor}99 100%)`,
               backgroundColor: brandColor,
             }}
           >
-            <div className="-translate-x-1/2 -translate-y-1/2 animate-pulse bg-gradient-to-br from-emerald-400 via-[#2D5A3D] to-green-800 opacity-80 mix-blend-multiply w-[500px] h-[500px] rounded-full absolute top-1/2 left-1/2 blur-3xl" />
-            <div className="flex z-30 pointer-events-none pb-10 absolute right-0 bottom-2 left-0 items-end justify-center">
-              <div className="w-80 h-64 relative">
-                <div className="flex flex-col bg-gradient-to-b from-white/20 to-white/5 rounded-3xl pt-5 pr-5 pb-5 pl-5 shadow-2xl backdrop-blur-xl justify-between border border-white/20">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className="flex items-center justify-center w-10 h-10 border rounded-lg bg-white/10 border-white/20 text-white">
-                        <Award className="w-5 h-5" />
-                      </div>
-                      <div>
-                        <h3 className="text-sm font-semibold tracking-tight text-white">
-                          {hero.cardTitle}
-                        </h3>
-                        <p className="text-xs text-emerald-100">{hero.cardSubtitle}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="relative w-full overflow-hidden border rounded-lg h-28 bg-slate-800 border-white/10">
-                    <ServiceImageCarousel services={config.services.items} />
-                  </div>
-                  <div className="w-full h-px mt-4 overflow-hidden rounded-full bg-white/20">
-                    <div className="h-full bg-white rounded-full w-full" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: `radial-gradient(circle at center, rgba(${rgb}, 0.15) 0%, transparent 70%)`,
+              }}
+            />
+            <div
+              className="absolute inset-0 pointer-events-none opacity-30"
+              style={{
+                background: "linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 50%)",
+              }}
+            />
+            <HeroFloatingCard
+              cardTitle={hero.cardTitle}
+              cardSubtitle={hero.cardSubtitle}
+              services={config.services.items}
+            />
           </div>
         ) : hero.image ? (
           <>
@@ -179,52 +176,32 @@ export default function Hero({ config }: HeroProps) {
               priority
             />
             <div
-              className="absolute inset-0 bg-gradient-to-br opacity-30"
+              className="absolute inset-0 bg-gradient-to-br opacity-30 pointer-events-none"
               style={{ background: `linear-gradient(to bottom right, ${brandColor}4D, transparent, ${brandColor}33)` }}
             />
-            <div className="flex z-30 pointer-events-none pb-10 absolute right-0 bottom-2 left-0 items-end justify-center">
-              <div className="w-80 h-64 relative">
-                <div className="flex flex-col bg-gradient-to-b from-white/20 to-white/5 rounded-3xl pt-5 pr-5 pb-5 pl-5 shadow-2xl backdrop-blur-xl justify-between border border-white/20">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className="flex items-center justify-center w-10 h-10 border rounded-lg bg-white/10 border-white/20 text-white">
-                        <Award className="w-5 h-5" />
-                      </div>
-                      <div>
-                        <h3 className="text-sm font-semibold tracking-tight text-white">
-                          {hero.cardTitle}
-                        </h3>
-                        <p className="text-xs text-blue-100">{hero.cardSubtitle}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="relative w-full overflow-hidden border rounded-lg h-28 bg-slate-800 border-white/10">
-                    <ServiceImageCarousel services={config.services.items} />
-                  </div>
-                  <div className="w-full h-px mt-4 overflow-hidden rounded-full bg-white/20">
-                    <div className="h-full bg-white rounded-full w-full" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: "linear-gradient(to left, rgba(0,0,0,0.15) 0%, transparent 40%)",
+              }}
+            />
+            <HeroFloatingCard
+              cardTitle={hero.cardTitle}
+              cardSubtitle={hero.cardSubtitle}
+              services={config.services.items}
+            />
           </>
         ) : null}
 
         {hero.caption && hero.image && (
           <div className="flex pointer-events-none z-30 pb-2 absolute right-0 bottom-0 left-0 justify-center">
             <div className="bg-slate-900/60 backdrop-blur-md text-xs text-neutral-200 rounded-full px-4 py-1.5 flex items-center gap-2 border border-white/10 shadow-lg">
-              <span className="inline-flex w-1.5 h-1.5 rounded-full bg-green-400" />
+              <span
+                className="inline-flex w-1.5 h-1.5 rounded-full"
+                style={{ backgroundColor: brandColor }}
+              />
               <span className="font-medium tracking-tight">{hero.caption}</span>
             </div>
-          </div>
-        )}
-
-        {!useGradient && hero.image && (
-          <div className="absolute inset-0 flex pointer-events-none">
-            <div className="w-1/4 h-full border-r border-white/10 backdrop-blur-[1px]" />
-            <div className="w-1/4 h-full border-r border-white/10 backdrop-blur-[2px]" />
-            <div className="w-1/4 h-full border-r border-white/10 backdrop-blur-[4px] bg-white/5" />
-            <div className="w-1/4 h-full backdrop-blur-[8px] bg-white/10" />
           </div>
         )}
       </div>

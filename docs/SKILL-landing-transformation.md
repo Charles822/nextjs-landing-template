@@ -245,11 +245,11 @@ cd landerMachine && npm run build
 
 ## Step 4: AssetsMachine
 
-**Input:** Image generation model access (OpenRouter with `google/gemini-2.5-flash-image`)
+**Input:** Image generation model access (OpenRouter with `google/gemini-3.1-flash-image-preview`)
 
 **Prerequisites:**
 - `OPENROUTER_API_KEY` in `landerMachine/.env`
-- Python 3 with `requests` and `python-dotenv` installed
+- Python 3 with `requests`, `python-dotenv`, and `Pillow` installed (`pip install -r scripts/requirements.txt`)
 
 ### Image Generation Rules
 
@@ -258,7 +258,7 @@ cd landerMachine && npm run build
 2. **NO readable signage** or text on backgrounds
 3. Clean professional backgrounds without text
 4. High-end commercial photography style
-5. 1024×1024px output (PNG)
+5. **Hero images:** Use **3:2 landscape ratio** (1200×800 px). Run with `--resize 1200x800` – the script crops/resizes to match the Hero component’s `object-cover` container. Avoid square (1:1) images.
 
 ### How to Generate Images
 
@@ -273,8 +273,8 @@ python3 scripts/generate-image.py "prompt" output_name --slug {slug}
 
 **Examples (for project `corvezgestionplus`):**
 ```bash
-# Hero image → public/corvezgestionplus/hero-corvezgestionplus.png
-python3 scripts/generate-image.py "Professional office, B2B consulting" hero-corvezgestionplus --slug corvezgestionplus
+# Hero image (3:2 ratio, 1200×800) → public/corvezgestionplus/hero-corvezgestionplus.png
+python3 scripts/generate-image.py "Professional office, B2B consulting, landscape" hero-corvezgestionplus --slug corvezgestionplus --resize 1200x800
 
 # Service images → public/corvezgestionplus/service-*.png
 python3 scripts/generate-image.py "Consulting meeting" service-conseil --slug corvezgestionplus
@@ -338,6 +338,7 @@ cp /path/to/image.png /tmp/image.png
 - Uses `modalities: ["image", "text"]` so OpenRouter returns images
 - Reads images from `message.images[].image_url.url`
 - Forces PNG output
+- `--resize WIDTHxHEIGHT` – crop/resize to exact dimensions (e.g. `--resize 1200x800` for hero 3:2). Requires Pillow.
 - Creates output directories if needed
 - Loads `OPENROUTER_API_KEY` from `.env` via python-dotenv
 

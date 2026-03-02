@@ -3,7 +3,7 @@
   "name": "LandingMachine",
   "brandColor": "#2563eb",
   "hero": {
-    "image": "/altiusconseil/hero-altiusconseil.png",
+    "image": "/landingmachine/hero-master.png",
     "imageAlt": "LandingMachine - Template de base",
     "headline": {
       "line1": "Allez plus haut",
