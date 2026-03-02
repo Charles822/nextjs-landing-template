@@ -17,7 +17,7 @@ export default function Services({ config }: ServicesProps) {
   const rgb = hexToRgb(brandColor);
 
   return (
-    <section id="expertises" className="bg-[#FAFAFA] border-slate-100 border-t">
+    <section id="services" className="bg-[#FAFAFA] border-slate-100 border-t">
       <div className="grid lg:grid-cols-12 gap-12 lg:px-12 pt-20 pr-6 pb-20 pl-6 gap-x-12 gap-y-12">
         <div className="lg:col-span-7 overflow-hidden space-y-12">
           <h3

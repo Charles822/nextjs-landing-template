@@ -37,18 +37,18 @@ Four optional config blocks were added. They render only when present:
 
 | Section | Purpose | JSON fields (per item) |
 |---------|---------|------------------------|
-| **partners** | Partner logos (separate from text-only partnersMarquee) | name, logo (path), url, description |
+| **partners** | Partner logos displayed in Hero marquee (below CTA) | name, logo (path), url, description |
 | **testimonials** | Quote cards | quote, author, company, role |
 | **offers** | Offers distinct from services | id, title, description, cta, href |
 | **blog** | Blog teasers | id, title, excerpt, image, href, date |
 
-**Note:** `partnersMarquee` stays for text labels in the hero; `partners` is a separate section with logos.
+**Note:** Partners are shown in the **Hero marquee** (below the CTA). When `partners` has items with logos, they scroll in the marquee. When no partners, placeholder logos are shown. There is no standalone Partners section.
 
 ### Page Section Order
 
 Sections are rendered in this order:
 ```
-Hero → ValueProposition → Services → Methodology → Offers → Partners → Testimonials → Blog → Contact → Footer
+Hero (incl. partners marquee) → Offers → ValueProposition → Testimonials → Services → Methodology → Blog → Contact → Footer
 ```
 
 ---
@@ -71,22 +71,54 @@ Hero → ValueProposition → Services → Methodology → Offers → Partners �
    - CTAs and buttons
    - Navigation labels
    - Footer content
-4. **NEW:** Extract additional content (if present on source site):
+4. Extract additional content (if present on source site):
+   - **Company logo** (nav/header) – extract first; if not found or unusable, note in "Where I need your help"
    - **Offers** (distinct from core services)
-   - **Partners** (names, descriptions, logo image URLs)
-   - **Testimonials** (quote, author, company, role)
+   - **Testimonials** (quote, author, company, role) – extract all; you will select only 3 best for the config
    - **Blog** (titles, excerpts, image URLs, dates)
-5. **NEW:** Create `assets.md` with URLs to download:
-   - Partner logo URLs
+   - **Partners/Clients (logos)** – HIGH PRIORITY for B2B sites (see below)
+5. Create `assets.md` with URLs to download:
+   - Company logo URL
+   - Partner/client logo URLs
    - Blog image URLs
    - Any other visual assets from source site
+
+### Clients/Partners (logos) – High Priority
+
+It is **common for B2B professional services** to showcase client logos. Always look for:
+- Section headings: "Nos clients", "Ils nous font confiance", "Partenaires", "Références", "Ils nous ont fait confiance"
+- Logo grids, carousels, or trust badges
+- Extract: Company name, logo image URL (from `img` src), optional URL, optional description
+- Add each logo URL to `assets.md`
+
+**When you cannot extract the company logo or client/partner logos** (no logos on site, images in JS/CSS, blocked, or unclear):
+- State this explicitly in your post-extraction response
+- Suggest the human provide logo URLs or image files if available elsewhere
+- List it under "Where I need your help" (e.g. "Company logo: not found. If you have the logo file, please share it." / "Partner logos: none found. Please share logo files or URLs if available.")
+
+### Testimonials: Max 3
+
+Extract all testimonials from the source. When creating the JSON config (Step 3), **select only the 3 best or most representative** even when more are available. Simplicity over quantity.
 
 **Output files:**
 - `projects/{slug}/business.md`
 - `projects/{slug}/copy.md`
-- `projects/{slug}/assets.md` (NEW - list of URLs to download)
+- `projects/{slug}/assets.md`
 
-**Checkpoint:** Stop and wait for user approval: *"Extraction complete. Review business.md, copy.md, and assets.md. Continue to copywriting?"*
+**Checkpoint response format** – You MUST include:
+
+```
+Extraction complete. Review business.md, copy.md, and assets.md.
+
+**Where I need your help:**
+- [List any section that could not be fully extracted, e.g. "Client logos: none found on the site. If you have logo files, please share URLs or paths."]
+- [Any unclear or missing content]
+- [Asset URLs that failed or need manual verification]
+
+Continue to copywriting?
+```
+
+Populate "Where I need your help" with: sections that could not be extracted, missing assets (e.g. partner logos), other ambiguities.
 
 ---
 
@@ -153,6 +185,10 @@ Create `landerMachine/src/config/projects/{slug}.json`:
 - **Required fields**: slug, name, brandColor, hero, navigation, services, valueProposition, methodology, partnersMarquee, contact, footer
 - **Optional fields** (include if present in source): partners, testimonials, offers, blog
 
+**Reminders:**
+- **Partners/Clients**: If extracted, include `partners` in the JSON. Use **actual logo graphics** (company logos, simple marks), not service/hero images. Path pattern: `/{slug}/partner-{slug}-{index}.png` or use `/placeholders/logo-*.svg` for demos. If logos were not extracted, leave `partners` empty and note in the extraction "Where I need your help" for the human to provide later.
+- **Testimonials**: Include only **3 testimonials** in the config. Choose the 3 best or most representative.
+
 ### 3.2 Register the Slug
 Edit `landerMachine/src/lib/getProjectConfig.ts`:
 - Add import: `import {slug} from "@/config/projects/{slug}.json";`
@@ -166,7 +202,7 @@ Generate or copy images to `landerMachine/public/{slug}/`:
 |------------|--------------|-----------|
 | Hero image | `/{slug}/hero-{slug}.png` | If hero.image is set in JSON |
 | Service images | `/{slug}/service-{name}.png` | If services.items[].image is set |
-| Partner logos | `/{slug}/partner-{slug}-{index}.png` | If partners section exists |
+| Partner logos | `/{slug}/partner-{slug}-{index}.png` | If partners marquee shows logos |
 | Blog images | `/{slug}/blog-{slug}-{postId}.png` | If blog section exists |
 | Logo | `/{slug}/logo-{slug}.svg` | Optional |
 

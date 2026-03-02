@@ -1,0 +1,128 @@
+[00:00:01.073] Server  LOG     ✓ Ready in 829ms
+[00:02:05.261] Server  LOG     ✓ Compiled in 621ms
+[00:02:52.898] Server  LOG     ✓ Compiled in 112ms
+[00:08:45.255] Server  LOG     ✓ Compiled in 130ms
+[00:08:49.250] Server  LOG     ✓ Compiled in 77ms
+[00:08:51.081] Server  LOG     ✓ Compiled in 58ms
+[00:08:51.444] Server  LOG     ✓ Compiled in 46ms
+[00:11:33.700] Server  LOG     ✓ Compiled in 59ms
+[00:13:18.483] Server  LOG     ✓ Compiled in 163ms
+[00:14:30.379] Server  LOG     ✓ Compiled in 184ms
+[00:18:08.509] Server  LOG     ✓ Compiled in 470ms
+[00:18:09.196] Browser WARN    Image with src "http://localhost:3001/altiusconseil/altius-conseil.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:20:04.521] Server  LOG     ✓ Compiled in 79ms
+[00:20:05.622] Server  LOG     ✓ Compiled in 147ms
+[00:22:38.931] Server  LOG     ✓ Compiled in 105ms
+[00:24:26.896] Server  LOG     ✓ Compiled in 75ms
+[00:24:29.300] Server  LOG     ✓ Compiled in 58ms
+[00:24:29.790] Browser WARN    Image with src "http://localhost:3001/altiusconseil/altius-conseil-header.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:33.312] Server  LOG     ✓ Compiled in 65ms
+[00:29:34.041] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/abus.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:34.041] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/airzone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:34.041] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/akto.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:34.041] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/allyn-international.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:34.041] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/biotic-phocea.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:29:34.263] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/cameo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:44.995] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+      <LoadingBoundary name="altiuscons..." loading={null}>
+        <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/altiuscon..." tree={[...]} params={{slug:"alti..."}} ...>
+                <SegmentViewNode type="page" pagePath="[slug]/pag...">
+                  <SegmentTrieNode>
+                  <ProjectPage>
+                    <main className="shadow-sla...">
+                      <nav>
+                      <Hero>
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <Contact config={{slug:"alti...", ...}}>
+                        <section id="contact" className="bg-white b...">
+                          <div className="max-w-6xl ...">
+                            <div className="grid lg:gr...">
+                              <div>
+                              <div className="bg-white r...">
+                                <form
+                                  onSubmit={function handleSubmit}
+                                  className="space-y-6"
+-                                 data-dashlane-rid="e4983be8646a8df2"
+                                >
+                                  <div className="grid sm:gr...">
+                                    <div>
+                                      <label>
+                                      <input
+                                        type="text"
+                                        id="name"
+                                        value=""
+                                        onChange={function onChange}
+                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-n..."
+                                        placeholder="Votre nom"
+                                        style={{--tw-ring-color:"#2563eb",--tw-border-color:"rgb(226 23..."}}
+-                                       data-dashlane-rid="321b11ec1707aef6"
+                                      >
+                                    <div>
+                                      <label>
+                                      <input
+                                        type="email"
+                                        id="email"
+                                        value=""
+                                        onChange={function onChange}
+                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-n..."
+                                        placeholder="vous@entreprise.fr"
+-                                       data-dashlane-rid="639d4c587d74e9ff"
+                                      >
+                                  <div>
+                                    <label>
+                                    <select
+                                      id="subject"
+                                      value=""
+                                      onChange={function onChange}
+                                      className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-non..."
+-                                     data-dashlane-rid="131c7ee268b4e776"
+                                    >
+                                  <div>
+                                    <label>
+                                    <textarea
+                                      id="message"
+                                      rows={4}
+                                      value=""
+                                      onChange={function onChange}
+                                      className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-non..."
+                                      placeholder="Décrivez votre projet ou vos questions..."
+-                                     data-dashlane-rid="66e70a810f9901a3"
+                                    >
+                                  <button
+                                    type="submit"
+                                    className="w-full flex items-center justify-center gap-2 px-6 py-4 text-white font..."
+                                    style={{backgroundColor:"#2563eb"}}
+-                                   data-dashlane-label="true"
+-                                   data-dashlane-rid="b71cc59e83d46c7a"
+                                  >
+                      ...
+                ...
+              ...
+
+[00:34:44.996] Browser WARN    Image with src "http://localhost:3001/altiusconseil/altius-conseil-header.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:44.996] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/abus.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:44.996] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/airzone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:44.996] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/akto.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:44.996] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/allyn-international.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:34:44.996] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/biotic-phocea.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:36:35.615] Browser WARN    Image with src "http://localhost:3001/altiusconseil/partners/cameo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

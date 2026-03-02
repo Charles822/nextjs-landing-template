@@ -14,7 +14,7 @@ export default function Methodology({ config }: MethodologyProps) {
     return (
       <section
         id="methode"
-        className="overflow-hidden bg-[#FAFAFA] border-neutral-100 border-t pt-24 pb-24 relative"
+        className="overflow-hidden bg-white border-neutral-100 border-t pt-24 pb-24 relative"
       >
         <div
           className="bg-neutral-200 pointer-events-none absolute top-0 right-0 bottom-0 left-0"
@@ -132,7 +132,7 @@ export default function Methodology({ config }: MethodologyProps) {
   return (
     <section
       id="methodologie"
-      className="bg-[#FAFAFA] border-slate-100 border-t py-20 lg:px-12 px-6"
+      className="bg-white border-slate-100 border-t py-20 lg:px-12 px-6"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">

@@ -9,7 +9,7 @@ export default function ValueProposition({ config }: ValuePropositionProps) {
   const { brandColor, valueProposition } = config;
 
   return (
-    <section className="bg-white border-slate-100 border-t py-16 lg:px-12 px-6">
+    <section className="bg-[#FAFAFA] border-slate-100 border-t py-16 lg:px-12 px-6">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-slate-900 mb-6">
           {valueProposition.headline}
@@ -22,7 +22,7 @@ export default function ValueProposition({ config }: ValuePropositionProps) {
           return (
             <div
               key={index}
-              className="p-6 rounded-2xl bg-slate-50 border border-slate-100"
+              className="p-6 rounded-2xl bg-white border border-slate-100"
             >
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center mb-4"

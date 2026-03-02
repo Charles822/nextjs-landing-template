@@ -1,0 +1,237 @@
+{
+  "slug": "landingmachine",
+  "name": "LandingMachine",
+  "brandColor": "#2563eb",
+  "hero": {
+    "image": "/altiusconseil/hero-altiusconseil.png",
+    "imageAlt": "LandingMachine - Template de base",
+    "headline": {
+      "line1": "Allez plus haut",
+      "line2": "avec votre landing.",
+      "line3": ""
+    },
+    "subheadline": "Template de landing pages modernes pour cabinets et professionnels.",
+    "subheadlineBold": "Toutes les sections visibles pour revue.",
+    "ctaText": "Nous contacter",
+    "badge1": "Template\ncomplet",
+    "badge2": "Toutes\nsections",
+    "cardTitle": "Master Template",
+    "cardSubtitle": "LandingMachine",
+    "caption": "Template de référence"
+  },
+  "navigation": {
+    "logoText": "LandingMachine",
+    "navLinks": [
+      { "label": "Offres", "href": "#offers" },
+      { "label": "Expertises", "href": "#services" },
+      { "label": "Témoignages", "href": "#testimonials" },
+      { "label": "Partenaires", "href": "#partners" },
+      { "label": "Blog", "href": "#blog" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Contact"
+  },
+  "offers": {
+    "sectionLabel": "Nos Offres",
+    "headline": "Développez vos compétences et celles de vos équipes.",
+    "items": [
+      {
+        "id": "offer-1",
+        "title": "Formation Management",
+        "description": "Piloter, guider, animer des équipes. Adapter son style au contexte et aux personnalités. Recadrer sans démotiver et faire grandir les équipes.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      },
+      {
+        "id": "offer-2",
+        "title": "Efficacité Professionnelle",
+        "description": "Gérer la pression et les évolutions constantes. Développer les compétences individuelles et collectives.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      },
+      {
+        "id": "offer-3",
+        "title": "Développement Commercial",
+        "description": "Performances des équipes commerciales. Répondre à des clients de plus en plus exigeants.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Nos Expertises",
+    "headline": "Accompagnement sur mesure",
+    "headlineHighlight": "pour votre réussite.",
+    "benefitsTitle": "Pourquoi nous choisir ?",
+    "benefits": [
+      {
+        "title": "Expertise reconnue",
+        "description": "Méthodologie éprouvée et références probantes."
+      },
+      {
+        "title": "Approche terrain",
+        "description": "Interventions directement opérationnelles."
+      },
+      {
+        "title": "Relation individualisée",
+        "description": "Un interlocuteur dédié pour chaque client."
+      }
+    ],
+    "items": [
+      {
+        "id": "svc-1",
+        "icon": "Award",
+        "image": "/altiusconseil/service-qualiopi.png",
+        "title": "Accompagnement Qualiopi",
+        "description": "Obtention de la certification pour accéder aux financements publics. Diagnostic, structuration, audit blanc.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "svc-2",
+        "icon": "Building2",
+        "image": "/altiusconseil/service-creation.png",
+        "title": "Création d'Organisme",
+        "description": "Accompagnement complet de la conception au lancement. Business plan, statut, structuration pédagogique.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "svc-3",
+        "icon": "GraduationCap",
+        "image": "/altiusconseil/service-formation.png",
+        "title": "Concevoir et Animer",
+        "description": "Formation de professionnels. Autonomie, responsabilisation et engagement actif des apprenants.",
+        "cta": "En savoir plus"
+      }
+    ]
+  },
+  "valueProposition": {
+    "headline": "Une expertise terrain reconnue",
+    "subheadline": "Nous accompagnons les entreprises dans le développement de leurs compétences et la structuration de leurs processus.",
+    "features": [
+      {
+        "icon": "Heart",
+        "title": "Facteur humain",
+        "description": "L'humain au cœur du développement. Chaque intervention est une expérience marquante."
+      },
+      {
+        "icon": "Target",
+        "title": "Expertise terrain",
+        "description": "Experts avec une solide expérience technique. Interventions directement opérationnelles."
+      },
+      {
+        "icon": "Award",
+        "title": "Qualité certifiée",
+        "description": "Satisfaction client au centre de notre démarche. Certifications et amélioration continue."
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Méthode",
+    "headline": "Comment nous vous accompagnons",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Search",
+        "title": "Diagnostic",
+        "description": "Analyse de votre situation et identification de vos besoins spécifiques."
+      },
+      {
+        "number": "02",
+        "icon": "Lightbulb",
+        "title": "Stratégie",
+        "description": "Élaboration d'un plan d'action personnalisé avec des étapes claires."
+      },
+      {
+        "number": "03",
+        "icon": "Users",
+        "title": "Accompagnement",
+        "description": "Mise en œuvre pas à pas avec formation et montée en compétences."
+      },
+      {
+        "number": "04",
+        "icon": "Award",
+        "title": "Pérennisation",
+        "description": "Autonomie pour le suivi qualité et l'amélioration continue."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "Témoignages",
+    "headline": "Ce qu'en disent nos clients",
+    "items": [
+      {
+        "quote": "Très bonne formation dynamique et participative. Un formateur à l'écoute et avec une bonne expérience de son sujet.",
+        "author": "Nacer",
+        "role": "Stagiaire"
+      },
+      {
+        "quote": "Formation très enrichissante. Formateur à l'écoute et très sympathique.",
+        "author": "Edwige Eyoum",
+        "role": "Stagiaire"
+      },
+      {
+        "quote": "Accompagnement excellent sur le fond et la forme. Je recommande vivement !",
+        "author": "Walid Gaaloul",
+        "company": "Organisme de formation"
+      }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Ils nous font confiance",
+    "headline": "Nos clients et partenaires",
+    "items": [
+      { "name": "Client A", "logo": "/placeholders/logo-1.svg", "description": "Organisme de formation" },
+      { "name": "Client B", "logo": "/placeholders/logo-2.svg", "description": "Cabinet conseil" },
+      { "name": "Client C", "logo": "/placeholders/logo-3.svg", "description": "Entreprise" }
+    ]
+  },
+  "blog": {
+    "sectionLabel": "Actualités",
+    "headline": "Derniers articles",
+    "subheadline": "Retrouvez nos dernières publications et actualités.",
+    "items": [
+      {
+        "id": "blog-1",
+        "title": "Comment structurer votre démarche qualité",
+        "excerpt": "Les étapes clés pour préparer votre certification et optimiser vos processus internes.",
+        "image": "/altiusconseil/service-qualiopi.png",
+        "href": "#",
+        "date": "15 oct. 2024"
+      },
+      {
+        "id": "blog-2",
+        "title": "Créer son organisme de formation",
+        "excerpt": "Guide pratique pour les entrepreneurs qui souhaitent se lancer dans la formation professionnelle.",
+        "image": "/altiusconseil/service-creation.png",
+        "href": "#",
+        "date": "28 sept. 2024"
+      },
+      {
+        "id": "blog-3",
+        "title": "Manager efficacement ses équipes",
+        "excerpt": "Conseils pour adapter son style au contexte et accompagner la montée en compétences.",
+        "image": "/altiusconseil/service-formation.png",
+        "href": "#",
+        "date": "12 sept. 2024"
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "Qualiopi",
+    "Formation",
+    "Certification",
+    "Management",
+    "Accompagnement"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Prêt à avancer ?",
+    "intro": "Premier échange gratuit pour faire le point sur vos besoins.",
+    "introBold": "Réponse sous 24h."
+  },
+  "footer": {
+    "description": "Template de landing pages pour cabinets et professionnels. Toutes les sections du master template.",
+    "copyright": "LandingMachine"
+  }
+}

@@ -1,0 +1,87 @@
+import type { ProjectConfig } from "@/types/project";
+import { Quote, User } from "lucide-react";
+
+interface TestimonialsEnhancedProps {
+  config: ProjectConfig;
+}
+
+export default function TestimonialsEnhanced({ config }: TestimonialsEnhancedProps) {
+  const { brandColor, testimonials } = config;
+  if (!testimonials?.items?.length) return null;
+
+  const items = testimonials.items.slice(0, 3);
+  const rotations = ["-10deg", "0deg", "10deg"];
+
+  return (
+    <section id="testimonials" className="sm:py-24 pt-16 pb-16 bg-white border-t border-slate-100">
+      <div className="mb-12 text-center px-6">
+        {testimonials.sectionLabel && (
+          <p
+            className="text-xs uppercase tracking-widest mb-2 font-medium"
+            style={{ color: brandColor }}
+          >
+            {testimonials.sectionLabel}
+          </p>
+        )}
+        {testimonials.headline && (
+          <h2 className="text-3xl sm:text-4xl tracking-tighter font-medium text-neutral-900">
+            {testimonials.headline}
+          </h2>
+        )}
+      </div>
+
+      <div className="relative flex items-center justify-center py-12 sm:py-20 min-h-[450px] overflow-hidden">
+        <div className="container max-w-full flex justify-center items-center flex-wrap gap-4 px-4">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="relative w-[340px] h-[340px] flex justify-center items-center shrink-0"
+              style={{
+                background: "linear-gradient(rgba(255, 255, 255, 0.1), transparent)",
+                border: "1px solid rgba(0, 0, 0, 0.05)",
+                boxShadow: "rgba(0, 0, 0, 0.1) 0px 25px 25px",
+                borderRadius: "1rem",
+                backdropFilter: "blur(10px)",
+                transform: `rotate(${rotations[index % rotations.length]})`,
+              }}
+            >
+              <div className="absolute inset-4 rounded-xl bg-white text-neutral-900 shadow-2xl ring-1 ring-neutral-200 overflow-hidden">
+                <div className="p-6 h-full flex flex-col">
+                  <div
+                    className="inline-flex items-center justify-center h-8 w-8 rounded-lg bg-neutral-100 ring-1 ring-neutral-200 mb-4"
+                    style={{ color: brandColor }}
+                  >
+                    <Quote className="h-4 w-4 text-neutral-700" />
+                  </div>
+                  <p className="text-sm leading-relaxed text-neutral-900 mb-4 flex-1 line-clamp-4">
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
+                  <div className="pt-3 border-t border-neutral-200 flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <div
+                        className="h-6 w-6 rounded-full flex items-center justify-center shrink-0 text-neutral-500 bg-neutral-100"
+                        style={{ backgroundColor: `${brandColor}20`, color: brandColor }}
+                      >
+                        <User className="h-3 w-3" />
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-xs font-medium text-neutral-900 truncate">
+                          {item.author}
+                        </div>
+                        {(item.company || item.role) && (
+                          <div className="text-xs text-neutral-500 truncate">
+                            {[item.role, item.company].filter(Boolean).join(", ")}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

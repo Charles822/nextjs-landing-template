@@ -9,13 +9,13 @@ export default function Home() {
         
         <div className="space-y-4">
           <Link 
-            href="/"
+            href="/master"
             className="block p-6 bg-white/10 hover:bg-white/20 rounded-2xl transition-all border border-white/10"
           >
             <div className="flex items-center justify-between">
               <div>
-                <h2 className="text-xl font-semibold mb-1">Master Template</h2>
-                <p className="text-slate-400 text-sm">Template de base AG Conseil (assurance)</p>
+                <h2 className="text-xl font-semibold mb-1">LandingMachine</h2>
+                <p className="text-slate-400 text-sm">Template complet – toutes les sections visibles</p>
               </div>
               <span className="text-2xl">→</span>
             </div>

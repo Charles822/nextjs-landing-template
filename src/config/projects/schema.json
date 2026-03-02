@@ -121,7 +121,11 @@
         },
         "logoImage": {
           "type": "string",
-          "description": "Path to logo in public/ (optional)"
+          "description": "Path to logo in public/ for footer/dark backgrounds (optional)"
+        },
+        "logoImageLight": {
+          "type": "string",
+          "description": "Path to logo variant for light backgrounds (header). Colored graphic + black text. Optional; falls back to logoImage with brightness filter if absent."
         },
         "navLinks": {
           "type": "array",
@@ -327,7 +331,7 @@
     },
     "partners": {
       "type": "object",
-      "description": "Partners with logos (optional). Rendered in dedicated section when present.",
+      "description": "Partners with logos (optional). Displayed in Hero marquee below CTA.",
       "properties": {
         "sectionLabel": {
           "type": "string"

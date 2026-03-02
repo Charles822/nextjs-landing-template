@@ -15,23 +15,25 @@ export default function Navigation({ config }: NavigationProps) {
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            {navigation.logoImage ? (
+            {(navigation.logoImageLight ?? navigation.logoImage) ? (
               <Image
-                src={navigation.logoImage}
+                src={navigation.logoImageLight ?? navigation.logoImage!}
                 alt={config.name}
-                width={32}
-                height={32}
-                className="object-contain"
+                width={120}
+                height={40}
+                className={`object-contain h-10 w-auto ${navigation.logoImageLight ? "" : "brightness-0"}`}
               />
             ) : (
-              <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: brandColor }}
-              >
-                <span className="text-white font-bold text-sm">{initial}</span>
-              </div>
+              <>
+                <div
+                  className="w-8 h-8 rounded-lg flex items-center justify-center"
+                  style={{ backgroundColor: brandColor }}
+                >
+                  <span className="text-white font-bold text-sm">{initial}</span>
+                </div>
+                <span className="font-semibold text-slate-900">{navigation.logoText}</span>
+              </>
             )}
-            <span className="font-semibold text-slate-900">{navigation.logoText}</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

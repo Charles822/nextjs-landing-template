@@ -1,4 +1,5 @@
 import type { ProjectConfig } from "@/types/project";
+import landingmachine from "@/config/landingmachine.json";
 import acfaty from "@/config/projects/acfaty.json";
 import katalyse from "@/config/projects/katalyse.json";
 import restauconseil from "@/config/projects/restauconseil.json";
@@ -38,4 +39,9 @@ export function getAllProjectSlugs(): ProjectSlug[] {
 
 export function isValidSlug(slug: string): slug is ProjectSlug {
   return slug in PROJECT_CONFIGS;
+}
+
+/** LandingMachine template config – isolated from projects, shows all sections */
+export function getLandingMachineConfig(): ProjectConfig {
+  return landingmachine as ProjectConfig;
 }

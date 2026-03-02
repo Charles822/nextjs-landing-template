@@ -10,7 +10,7 @@ export default function Offers({ config }: OffersProps) {
   if (!offers?.items?.length) return null;
 
   return (
-    <section className="bg-white border-t border-slate-100 pt-20 pb-20 pr-6 pl-6 lg:px-12">
+    <section id="offers" className="bg-white border-t border-slate-100 pt-20 pb-20 pr-6 pl-6 lg:px-12">
       <div className="max-w-5xl mx-auto">
         {offers.sectionLabel && (
           <p

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { ProjectConfig } from "@/types/project";
 
 interface FooterProps {
@@ -14,15 +15,27 @@ export default function Footer({ config }: FooterProps) {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: brandColor }}
-              >
-                <span className="text-white font-bold text-sm">
-                  {config.name.charAt(0)}
-                </span>
-              </div>
-              <span className="font-semibold text-white">{config.name}</span>
+              {navigation.logoImage ? (
+                <Image
+                  src={navigation.logoImage}
+                  alt={config.name}
+                  width={140}
+                  height={48}
+                  className="object-contain h-12 w-auto brightness-0 invert opacity-90"
+                />
+              ) : (
+                <>
+                  <div
+                    className="w-8 h-8 rounded-lg flex items-center justify-center"
+                    style={{ backgroundColor: brandColor }}
+                  >
+                    <span className="text-white font-bold text-sm">
+                      {config.name.charAt(0)}
+                    </span>
+                  </div>
+                  <span className="font-semibold text-white">{config.name}</span>
+                </>
+              )}
             </div>
             <p className="text-sm mb-4 max-w-sm">{footer.description}</p>
           </div>

@@ -25,6 +25,8 @@ export interface ProjectConfig {
   navigation: {
     logoText: string;
     logoImage?: string;
+    /** Logo for light backgrounds (header). Colored graphic + black text. Falls back to logoImage + brightness-0 if absent. */
+    logoImageLight?: string;
     navLinks: { label: string; href: string }[];
     ctaText: string;
   };
