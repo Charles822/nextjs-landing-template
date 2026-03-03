@@ -3,8 +3,9 @@
   "name": "XTEP",
   "brandColor": "#cc3c24",
   "hero": {
-    "heroVariant": "gradient",
-    "imageAlt": "Cabinet de conseil XTEP - Data BI Partner",
+    "heroVariant": "image",
+    "heroImage": "/xtep/hero-founders.jpg",
+    "imageAlt": "Fondateurs XTEP - Cabinet de conseil en gestion",
     "headline": {
       "line1": "Optimisez votre",
       "line2": "performance.",
