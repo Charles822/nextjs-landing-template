@@ -4,7 +4,7 @@
   "brandColor": "#cc3c24",
   "hero": {
     "heroVariant": "image",
-    "heroImage": "/xtep/hero-founders.jpg",
+    "image": "/xtep/hero-founders.jpg",
     "imageAlt": "Fondateurs XTEP - Cabinet de conseil en gestion",
     "headline": {
       "line1": "Optimisez votre",
