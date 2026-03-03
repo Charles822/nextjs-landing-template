@@ -22,6 +22,7 @@
   "navigation": {
     "logoText": "XTEP",
     "logoImage": "/xtep/logo-xtep.png",
+    "logoImageLight": "/xtep/logo-xtep.png",
     "navLinks": [
       { "label": "Nos solutions", "href": "#offers" },
       { "label": "Cas d'usage", "href": "#blog" },
