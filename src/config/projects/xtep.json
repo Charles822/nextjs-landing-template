@@ -247,13 +247,50 @@
       }
     ]
   },
+  "partners": {
+    "sectionLabel": "Ils nous font confiance",
+    "headline": "Nos clients",
+    "headlineHighlight": "des secteurs variés.",
+    "items": [
+      {
+        "name": "Sacem",
+        "logo": "/xtep/logo-sacem.png",
+        "description": "Société des auteurs, compositeurs et éditeurs de musique"
+      },
+      {
+        "name": "Somfy",
+        "logo": "/xtep/logo-somfy.png",
+        "description": "Leader mondial de la domotique"
+      },
+      {
+        "name": "Believe",
+        "logo": "/xtep/logo-believe.png",
+        "description": "Groupe digital de distribution musicale"
+      },
+      {
+        "name": "Herrenknecht",
+        "logo": "/xtep/logo-herrenknecht.png",
+        "description": "Leader mondial des tunneliers"
+      },
+      {
+        "name": "Le Conservateur",
+        "logo": "/xtep/logo-conservateur.png",
+        "description": "Groupe de protection sociale"
+      },
+      {
+        "name": "Académie Nancy-Metz",
+        "logo": "/xtep/logo-academie-nancy.png",
+        "description": "Académie de Nancy-Metz"
+      }
+    ]
+  },
   "partnersMarquee": [
     "Sacem",
     "Somfy",
     "Believe",
-    "Arquus",
     "Herrenknecht",
-    "Alliance Healthcare"
+    "Nancy-Metz",
+    "Courbevoie"
   ],
   "contact": {
     "sectionLabel": "Contact",
