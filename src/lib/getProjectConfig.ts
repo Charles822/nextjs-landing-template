@@ -8,6 +8,7 @@ import greenconseilV2 from "@/config/projects/greenconseil-v2.json";
 import fidemconseil from "@/config/projects/fidemconseil.json";
 import altiusconseil from "@/config/projects/altiusconseil.json";
 import xtep from "@/config/projects/xtep.json";
+import lacourcelleassocies from "@/config/projects/lacourcelle-associes.json";
 
 const PROJECT_CONFIGS: Record<string, ProjectConfig> = {
   acfaty: acfaty as ProjectConfig,
@@ -18,6 +19,7 @@ const PROJECT_CONFIGS: Record<string, ProjectConfig> = {
   fidemconseil: fidemconseil as ProjectConfig,
   altiusconseil: altiusconseil as ProjectConfig,
   xtep: xtep as ProjectConfig,
+  lacourcelleassocies: lacourcelleassocies as ProjectConfig,
 };
 
 const PROJECT_SLUGS = Object.keys(PROJECT_CONFIGS) as ProjectSlug[];
@@ -30,7 +32,8 @@ export type ProjectSlug =
   | "greenconseil-v2"
   | "fidemconseil"
   | "altiusconseil"
-  | "xtep";
+  | "xtep"
+  | "lacourcelleassocies";
 
 export function getProjectConfig(slug: string): ProjectConfig | null {
   return PROJECT_CONFIGS[slug] ?? null;

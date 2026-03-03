@@ -1,0 +1,235 @@
+{
+  "slug": "lacourcelle-associes",
+  "name": "La Courcelle & Associés",
+  "brandColor": "#b0107d",
+  "hero": {
+    "heroVariant": "gradient",
+    "imageAlt": "Cabinet de conseil en évolution professionnelle",
+    "headline": {
+      "line1": "Votre évolution professionnelle",
+      "line2": "commence ici.",
+      "line3": ""
+    },
+    "subheadline": "Cabinet de conseil en évolution professionnelle. Bilans de compétences, outplacement, reconversion — un accompagnement personnalisé à chaque étape de votre parcours.",
+    "subheadlineBold": "Certifié Qualiopi.",
+    "ctaText": "Découvrir nos expertises",
+    "badge1": "Accompagnement\npersonnalisé",
+    "badge2": "Certifié\nQualiopi",
+    "cardTitle": "Nos expertises",
+    "cardSubtitle": "5 solutions pour votre évolution",
+    "caption": "Premier rendez-vous gratuit"
+  },
+  "navigation": {
+    "logoText": "La Courcelle & Associés",
+    "logoImage": "/lacourcelle-associes/logo-lacourcelle.png",
+    "logoImageLight": "/lacourcelle-associes/logo-lacourcelle.png",
+    "navLinks": [
+      { "label": "Nos expertises", "href": "#services" },
+      { "label": "L'équipe", "href": "#team" },
+      { "label": "Témoignages", "href": "#testimonials" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Prendre rendez-vous"
+  },
+  "valueProposition": {
+    "headline": "Un cabinet à taille humaine",
+    "subheadline": "Trois consultantes expérimentées, une approche personnalisée. Nous accompagnons les salariés et cadres dans leurs transitions professionnelles avec méthode et bienveillance.",
+    "features": [
+      {
+        "icon": "Award",
+        "title": "Certification Qualiopi",
+        "description": "Bilans de compétences certifiés, conformes aux exigences de qualité. Votre financement CPF ou OPCO est sécurisé."
+      },
+      {
+        "icon": "Users",
+        "title": "Équipe dédiée",
+        "description": "Sabine Lacourcelle, Estelle Grolleau et Lila Aït Madi : trois consultantes associées, chacune avec son expertise et sa sensibilité."
+      },
+      {
+        "icon": "Heart",
+        "title": "Accompagnement sur mesure",
+        "description": "Pas de parcours standardisé. Nous adaptons notre méthode à votre situation, vos objectifs et votre rythme."
+      },
+      {
+        "icon": "Network",
+        "title": "Réseau actif",
+        "description": "Partenariats avec entreprises, cabinets de recrutement et réseaux professionnels pour faciliter votre transition."
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Nos Expertises",
+    "headline": "5 expertises pour",
+    "headlineHighlight": "votre évolution.",
+    "benefitsTitle": "Pourquoi faire appel à nous ?",
+    "benefits": [
+      {
+        "title": "Certification Qualiopi",
+        "description": "Bilans de compétences certifiés, conformes aux exigences de qualité officielles."
+      },
+      {
+        "title": "Équipe expérimentée",
+        "description": "Trois consultantes associées avec des expertises complémentaires et une approche humaine."
+      },
+      {
+        "title": "Accompagnement personnalisé",
+        "description": "Pas de parcours standardisé. Chaque bilan est adapté à votre situation et vos objectifs."
+      }
+    ],
+    "items": [
+      {
+        "id": "bilan-competences",
+        "icon": "ClipboardList",
+        "title": "Bilan de compétences",
+        "description": "Prenez du recul sur votre parcours, identifiez vos leviers de développement et définissez un projet professionnel aligné avec vos aspirations.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "outplacement",
+        "icon": "Briefcase",
+        "title": "Outplacement",
+        "description": "Accompagnement personnalisé après une rupture conventionnelle ou un licenciement. Redonnez du sens à votre recherche et sécurisez votre transition.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "validation-potentiel",
+        "icon": "Target",
+        "title": "Validation de potentiel",
+        "description": "Évaluez vos compétences et votre adéquation à un poste ou un secteur cible. Un diagnostic objectif pour des décisions éclairées.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "creation-entreprise",
+        "icon": "Rocket",
+        "title": "Création d'entreprise",
+        "description": "De l'idée au projet concret : structuration, étude de marché, business plan. Vous accompagner dans votre entrepreneuriat.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "mobilite-conjoint",
+        "icon": "MapPin",
+        "title": "Mobilité du conjoint",
+        "description": "Accompagnement spécifique pour les conjoints de collaborateurs en mutation géographique. Faciliter l'installation et la recherche d'emploi dans la nouvelle région.",
+        "cta": "En savoir plus"
+      }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Nos Références",
+    "headline": "Des entreprises de tous secteurs",
+    "headlineHighlight": "nous font confiance.",
+    "items": [
+      { "name": "Allianz", "logo": "/lacourcelle-associes/logo-allianz.jpg" },
+      { "name": "Asmodee", "logo": "/lacourcelle-associes/logo-asmodee.jpg" },
+      { "name": "Captrain", "logo": "/lacourcelle-associes/logo-captrain.jpg" },
+      { "name": "CDC Croissance", "logo": "/lacourcelle-associes/logo-cdc-croissance.jpg" },
+      { "name": "Docaposte", "logo": "/lacourcelle-associes/logo-docaposte.jpg" },
+      { "name": "DPD", "logo": "/lacourcelle-associes/logo-dpd.jpg" },
+      { "name": "Le Méridien", "logo": "/lacourcelle-associes/logo-meridien.jpg" },
+      { "name": "Lumibird", "logo": "/lacourcelle-associes/logo-lumibird.jpg" },
+      { "name": "Newen", "logo": "/lacourcelle-associes/logo-newen.jpg" },
+      { "name": "OPPBTP", "logo": "/lacourcelle-associes/logo-oppbtp.jpg" },
+      { "name": "Alliance Française", "logo": "/lacourcelle-associes/logo-alliance-francaise.jpg" },
+      { "name": "ANRH", "logo": "/lacourcelle-associes/logo-anrh.jpg" },
+      { "name": "Afonso Avocat", "logo": "/lacourcelle-associes/logo-afonso-avocat.jpg" },
+      { "name": "Silenzio", "logo": "/lacourcelle-associes/logo-silenzio.jpg" }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Approche",
+    "headline": "Une méthode éprouvée",
+    "headlineHighlight": "en 3 étapes.",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Search",
+        "title": "Écoute & Diagnostic",
+        "description": "Nous prenons le temps de comprendre votre parcours, vos compétences et vos aspirations pour établir un diagnostic précis de votre situation."
+      },
+      {
+        "number": "02",
+        "icon": "Target",
+        "title": "Construction du projet",
+        "description": "Ensemble, nous définissons un projet professionnel réaliste et aligné avec vos motivations, en identifiant les opportunités du marché."
+      },
+      {
+        "number": "03",
+        "icon": "Rocket",
+        "title": "Mise en action",
+        "description": "Nous vous accompagnons dans la concrétisation de votre projet : préparation aux entretiens, mise en relation avec notre réseau, suivi personnalisé."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "Témoignages",
+    "headline": "Des parcours réussis",
+    "headlineHighlight": "et des retours d'expérience.",
+    "items": [
+      {
+        "quote": "Vos conseils ont été précieux et la démarche a été très appréciée par les recruteurs. Aujourd'hui, j'ai ainsi l'opportunité d'avoir un poste en totale adéquation avec les compétences que nous avons su extraire.",
+        "author": "Auditeur interne",
+        "company": "Secteur des transports"
+      },
+      {
+        "quote": "L'outplacement s'est terminé par une proposition de CDI. Votre écoute, nos échanges réguliers et la démarche que vous m'avez proposée m'ont permis de comprendre rapidement la trajectoire et d'y adhérer.",
+        "author": "Manager Conseil",
+        "company": "Cabinet d'audit et conseil"
+      },
+      {
+        "quote": "Une reprise d'activité professionnelle réussie après 4 ans d'expatriation ! Vous avez su impulser une dynamique d'entretiens réguliers, prendre le temps de l'écoute, et me donner des conseils pertinents.",
+        "author": "Responsable formation",
+        "company": "Retour d'expatriation"
+      },
+      {
+        "quote": "Vous avez été d'un grand soutien, avec la fermeté, ténacité, perspicacité, conviction et surtout beaucoup d'humanité. Votre professionnalisme m'a permis d'acquérir les clés qui m'ont amené à affronter des entretiens.",
+        "author": "Assistante de direction",
+        "company": "Réseaux électriques"
+      },
+      {
+        "quote": "En dépit de mon âge (47-48 ans), j'ai signé un CDI au sein d'un grand groupe pharmaceutique. Vous avez su me redonner confiance et me remotiver, toujours en m'encourageant à aller de l'avant sans aucun jugement.",
+        "author": "Coordinatrice de projets RH",
+        "company": "Industrie pharmaceutique"
+      },
+      {
+        "quote": "Vos conseils étaient toujours judicieux, votre soutien sans faille. Je viens d'être positionné au sein d'un groupe financier. Un grand MERCI.",
+        "author": "Directeur Administratif et Financier",
+        "company": "Retour d'expatriation"
+      }
+    ]
+  },
+  "offers": {
+    "sectionLabel": "Notre Certification",
+    "headline": "Un gage de qualité pour vos bilans",
+    "items": [
+      {
+        "id": "qualiopi",
+        "title": "Certifié Qualiopi",
+        "description": "Notre cabinet est certifié Qualiopi pour la catégorie d'action « Bilans de compétences ». Cette certification atteste de notre conformité aux exigences qualité du décret n°2019-564 du 6 juin 2019.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "Allianz",
+    "Asmodee",
+    "Captrain",
+    "CDC Croissance",
+    "Docaposte",
+    "DPD",
+    "Newen",
+    "Lumibird"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Parlons de votre projet",
+    "intro": "Prenez rendez-vous pour un premier entretien gratuit et sans engagement. Nous étudierons ensemble votre situation et vos objectifs.",
+    "introBold": "10 Rue de la Boétie, 75008 Paris — Métro Franklin-Roosevelt (ligne 1)",
+    "email": "contact@lacourcelle-associes.com"
+  },
+  "footer": {
+    "description": "Cabinet de conseil en évolution professionnelle. Bilans de compétences certifiés Qualiopi.",
+    "copyright": "La Courcelle & Associés"
+  }
+}
