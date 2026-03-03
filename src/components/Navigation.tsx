@@ -14,15 +14,23 @@ export default function Navigation({ config }: NavigationProps) {
     <nav className="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-3">
             {(navigation.logoImageLight ?? navigation.logoImage) ? (
-              <Image
-                src={navigation.logoImageLight ?? navigation.logoImage!}
-                alt={config.name}
-                width={120}
-                height={40}
-                className={`object-contain h-10 w-auto ${navigation.logoImageLight ? "" : "brightness-0"}`}
-              />
+              <>
+                <Image
+                  src={navigation.logoImageLight ?? navigation.logoImage!}
+                  alt={config.name}
+                  width={120}
+                  height={40}
+                  className={`object-contain h-10 w-auto ${navigation.logoImageLight ? "" : "brightness-0"}`}
+                />
+                {config.slug === "xtep" && (
+                  <span className="font-bold text-2xl tracking-tight">
+                    <span className="bg-gradient-to-r from-[#cc3c24] to-[#e17225] bg-clip-text text-transparent">X</span>
+                    <span className="text-slate-900">TEP</span>
+                  </span>
+                )}
+              </>
             ) : (
               <>
                 <div
