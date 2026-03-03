@@ -137,6 +137,19 @@ export default function Home() {
               <span className="text-2xl">→</span>
             </div>
           </Link>
+
+          <Link 
+            href="/xtep"
+            className="block p-6 bg-[#0f766e]/20 hover:bg-[#0f766e]/30 rounded-2xl transition-all border border-[#0f766e]/30"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <h2 className="text-xl font-semibold mb-1 text-[#14b8a6]">XTEP ⭐</h2>
+                <p className="text-slate-300 text-sm">Cabinet de conseil en gestion d'entreprise</p>
+              </div>
+              <span className="text-2xl">→</span>
+            </div>
+          </Link>
         </div>
 
         <div className="mt-12 text-center text-slate-500 text-sm">

@@ -1,0 +1,268 @@
+{
+  "slug": "xtep",
+  "name": "XTEP",
+  "brandColor": "#0f766e",
+  "hero": {
+    "heroVariant": "gradient",
+    "imageAlt": "Cabinet de conseil XTEP - Data BI Partner",
+    "headline": {
+      "line1": "Optimisez votre",
+      "line2": "performance.",
+      "line3": ""
+    },
+    "subheadline": "Cabinet de conseil en gestion d'entreprise. Double expertise métier et technique pour professionnaliser votre pilotage financier.",
+    "subheadlineBold": "Votre Data BI Partner.",
+    "ctaText": "Découvrir nos solutions",
+    "badge1": "Double\nexpertise",
+    "badge2": "Data BI\nPartner",
+    "cardTitle": "Solutions propriétaires",
+    "cardSubtitle": "My Econtroller & KLS Toolbox",
+    "caption": "Premier rendez-vous gratuit"
+  },
+  "navigation": {
+    "logoText": "XTEP",
+    "navLinks": [
+      { "label": "Nos solutions", "href": "#offers" },
+      { "label": "Cas d'usage", "href": "#blog" },
+      { "label": "Témoignages", "href": "#testimonials" },
+      { "label": "Méthode", "href": "#methodologie" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Nous contacter"
+  },
+  "offers": {
+    "sectionLabel": "Nos Solutions",
+    "headline": "Des outils sur mesure",
+    "headlineHighlight": "pour votre gestion.",
+    "items": [
+      {
+        "id": "my-econtroller",
+        "icon": "LineChart",
+        "title": "My Econtroller",
+        "description": "Plateforme web intégrée et chiffrée. Chargez vos fichiers plats ou FEC et récupérez vos tableaux de bord et analyses financières sur mesure. Révolutionnez votre gestion.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      },
+      {
+        "id": "kls-toolbox",
+        "icon": "Table2",
+        "title": "KLS Toolbox",
+        "description": "Vous ne verrez plus jamais Excel du même œil. Templates opérationnels et adaptés pour démarrage d'activité ou pilotage de petite structure.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      },
+      {
+        "id": "accompagnement",
+        "icon": "Users",
+        "title": "Accompagnement Sur Mesure",
+        "description": "Conseil, accompagnement pas à pas et mise en place des outils nécessaires pour optimiser la gestion quotidienne de votre entreprise. Expertise métier et technique.",
+        "cta": "En savoir plus",
+        "href": "#contact"
+      }
+    ]
+  },
+  "valueProposition": {
+    "headline": "Votre Data BI Partner",
+    "subheadline": "XTEP combine expertise métier (Finance, Achats) et expertise technique (Data, ERP) pour optimiser vos processus et rationaliser vos données.",
+    "features": [
+      {
+        "icon": "Briefcase",
+        "title": "Expertise Métiers",
+        "description": "Chefs de projets finance, AMOA Finance/Achats, Contrôleurs de Gestion, Responsable Data migration. Maîtrise des processus métiers."
+      },
+      {
+        "icon": "Code",
+        "title": "Expertise Technique",
+        "description": "Data Analysts, Product Manager ERP, Scrum Master, DevOPS, Coach Agiles. Maîtrise technique des outils et données."
+      },
+      {
+        "icon": "LineChart",
+        "title": "Data & BI",
+        "description": "Structuration des données, tableaux de bord sur mesure, analyses financières. Transformation des données en insights actionnables."
+      },
+      {
+        "icon": "Building2",
+        "title": "Migration ERP",
+        "description": "Expertise SAP S4/Hana, Microsoft Dynamics 365, intégration Ivalua. Accompagnement projet de migration de bout en bout."
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Nos Expertises",
+    "headline": "Libérez-vous de vos contraintes",
+    "headlineHighlight": "avec nos solutions.",
+    "benefitsTitle": "Pourquoi faire appel à XTEP ?",
+    "benefits": [
+      {
+        "title": "Double expertise",
+        "description": "Combinaison unique d'expertise métier (Finance/Achats) et technique (Data/ERP) pour des solutions complètes."
+      },
+      {
+        "title": "Méthodologie éprouvée",
+        "description": "Agile + Lean + Audit. Approche pragmatique qui livre des résultats concrets et mesurables."
+      },
+      {
+        "title": "Outils propriétaires",
+        "description": "My Econtroller et KLS Toolbox : solutions développées sur mesure pour vos besoins spécifiques."
+      }
+    ],
+    "items": [
+      {
+        "id": "pilotage",
+        "icon": "Target",
+        "title": "Pilotage de Projets",
+        "description": "Chefs de projets finance, Directeur de projets, AMOA Finance/Achats. Accompagnement de la structuration à la mise en production.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "data",
+        "icon": "Database",
+        "title": "Data Management",
+        "description": "Structuration de vos données, data migration, mise en place de tableaux de bord et indicateurs de pilotage (KPIs)."
+        ,"cta": "En savoir plus"
+      },
+      {
+        "id": "controle",
+        "icon": "ClipboardCheck",
+        "title": "Contrôle de Gestion",
+        "description": "Analyse de vos ratios de gestion, optimisation des processus, mise en place de routines de pilotage et reporting."
+        ,"cta": "En savoir plus"
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Méthode",
+    "headline": "Une approche pragmatique",
+    "headlineHighlight": "basée sur 3 piliers.",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "RefreshCw",
+        "title": "Management Agile",
+        "description": "Pilotage itératif, adaptabilité et livraisons rapides. Méthodologie qui permet une mise en œuvre efficace et progressive des solutions."
+      },
+      {
+        "number": "02",
+        "icon": "Scissors",
+        "title": "Lean Management",
+        "description": "Élimination des gaspillages, optimisation des flux et focus sur la valeur ajoutée. Identification des leviers d'amélioration continue."
+      },
+      {
+        "number": "03",
+        "icon": "Search",
+        "title": "Techniques d'Audit",
+        "description": "Analyse rigoureuse des données, identification des risques et recommandations structurées. Approche factuelle et chiffrée."
+      }
+    ]
+  },
+  "blog": {
+    "sectionLabel": "Cas d'Usage",
+    "headline": "Ils nous font confiance",
+    "headlineHighlight": "12 projets réussis.",
+    "items": [
+      {
+        "id": "confidentiel-sap",
+        "title": "Migration ERP SAP S4/Hana",
+        "excerpt": "Accompagnement d'un groupe international (CA > 5 Md€) dans une migration ERP stratégique avec intégration Ivalua pour la gestion des achats.",
+        "date": "2024",
+        "href": "#contact"
+      },
+      {
+        "id": "tms",
+        "title": "TMS — Migration vers SAP ECC",
+        "excerpt": "Migration d'un ERP AS400 et CEGID vers SAP ECC pour une filiale d'un groupe industriel international.",
+        "date": "2024",
+        "href": "#contact"
+      },
+      {
+        "id": "academie",
+        "title": "Académie Nancy-Metz — Diagnostic financier",
+        "excerpt": "Diagnostic des pratiques de pilotage financier des 5 GRETA-CFA et GIP FTLV pour identifier zones d'amélioration et bonnes pratiques.",
+        "date": "2023",
+        "href": "#contact"
+      },
+      {
+        "id": "somfy",
+        "title": "Somfy — Management Qualité ISO9001",
+        "excerpt": "Amélioration des processus pour répondre aux exigences ISO9001 et enjeux internes du leader mondial de la domotique.",
+        "date": "2023",
+        "href": "#contact"
+      },
+      {
+        "id": "believe",
+        "title": "Believe — Modélisation coûts IT",
+        "excerpt": "Dans un contexte d'entrée en bourse, maîtrise du pilotage des dépenses IT représentant une part importante des coûts globaux.",
+        "date": "2023",
+        "href": "#contact"
+      },
+      {
+        "id": "sacem-achats",
+        "title": "Sacem — Diagnostic Achats et Segmentation",
+        "excerpt": "Structuration de la démarche achats en cohérence avec la stratégie groupe, le nouvel ERP D365 et la démarche RSE.",
+        "date": "2023",
+        "href": "#contact"
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "Témoignages",
+    "headline": "Ce qu'en disent nos clients",
+    "items": [
+      {
+        "quote": "Une équipe professionnelle, réactive et à l'écoute. Je recommande.",
+        "author": "Julien AUBRY",
+        "role": "Trésorier",
+        "company": "Association Paris IDF Champagne"
+      },
+      {
+        "quote": "Excellente maitrise du sujet qui a permis de challenger l'intégralité du process financier et de préconiser la mise en place de solutions pertinentes.",
+        "author": "Anne CONSTANTY",
+        "role": "Directrice Financière Adjointe",
+        "company": "Sacem"
+      },
+      {
+        "quote": "J'ai apprécié la franchise dans la relation et la capacité à remettre en question et à réaliser des actions d'amélioration structurelles.",
+        "author": "Paul COHEN SCALI",
+        "role": "Directeur des Systèmes d'Informations",
+        "company": "Sacem"
+      },
+      {
+        "quote": "Le professionnalisme, les compétences et la bienveillance de l'équipe XTEP ont rapidement permis de s'intégrer et de gagner la confiance des équipes, y compris de la maison mère allemande. Un grand merci.",
+        "author": "Guy LECHANTRE",
+        "role": "Directeur Général",
+        "company": "Herrenknecht France"
+      },
+      {
+        "quote": "XTEP est un cabinet de conseil rigoureux dans ses approches. Ils se posent les bonnes questions pour orienter leur regard sur l'intérieur comme sur l'extérieur. Des consultants droits et de confiance.",
+        "author": "Guy SCHAPIRO",
+        "role": "CFO Manageur de transition",
+        "company": "ROC Finance"
+      },
+      {
+        "quote": "Vos compétences ont été bénéfiques pour notre direction et société. Vos expériences passées nous ont permis d'aborder les problèmes différemment et d'apporter de nouveaux éclairages.",
+        "author": "Chief Financial Officer",
+        "role": "CFO",
+        "company": "Arquus"
+      }
+    ]
+  },
+  "partnersMarquee": [
+    "Sacem",
+    "Somfy",
+    "Believe",
+    "Arquus",
+    "Herrenknecht",
+    "Alliance Healthcare"
+  ],
+  "contact": {
+    "sectionLabel": "Contact",
+    "headline": "Optimisez votre performance avec XTEP",
+    "intro": "Premier rendez-vous gratuit pour faire le point sur vos besoins et identifier les leviers d'amélioration.",
+    "introBold": "Réponse sous 24h."
+  },
+  "footer": {
+    "description": "Cabinet de Conseil en Gestion d'Entreprise. Double expertise métier et technique. Votre Data BI Partner.",
+    "copyright": "XTEP"
+  }
+}
