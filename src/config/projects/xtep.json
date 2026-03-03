@@ -115,21 +115,24 @@
         "icon": "Target",
         "title": "Pilotage de Projets",
         "description": "Chefs de projets finance, Directeur de projets, AMOA Finance/Achats. Accompagnement de la structuration à la mise en production.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/xtep/service-pilotage.png"
       },
       {
         "id": "data",
         "icon": "Database",
         "title": "Data Management",
-        "description": "Structuration de vos données, data migration, mise en place de tableaux de bord et indicateurs de pilotage (KPIs)."
-        ,"cta": "En savoir plus"
+        "description": "Structuration de vos données, data migration, mise en place de tableaux de bord et indicateurs de pilotage (KPIs).",
+        "cta": "En savoir plus",
+        "image": "/xtep/service-data.png"
       },
       {
         "id": "controle",
         "icon": "ClipboardCheck",
         "title": "Contrôle de Gestion",
-        "description": "Analyse de vos ratios de gestion, optimisation des processus, mise en place de routines de pilotage et reporting."
-        ,"cta": "En savoir plus"
+        "description": "Analyse de vos ratios de gestion, optimisation des processus, mise en place de routines de pilotage et reporting.",
+        "cta": "En savoir plus",
+        "image": "/xtep/service-accompagnement.png"
       }
     ]
   },
