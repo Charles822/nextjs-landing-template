@@ -82,35 +82,40 @@
         "icon": "ClipboardList",
         "title": "Bilan de compétences",
         "description": "Prenez du recul sur votre parcours, identifiez vos leviers de développement et définissez un projet professionnel aligné avec vos aspirations.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/lacourcelle-associes/service-bilan-competences.png"
       },
       {
         "id": "outplacement",
         "icon": "Briefcase",
         "title": "Outplacement",
         "description": "Accompagnement personnalisé après une rupture conventionnelle ou un licenciement. Redonnez du sens à votre recherche et sécurisez votre transition.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/lacourcelle-associes/service-outplacement.png"
       },
       {
         "id": "validation-potentiel",
         "icon": "Target",
         "title": "Validation de potentiel",
         "description": "Évaluez vos compétences et votre adéquation à un poste ou un secteur cible. Un diagnostic objectif pour des décisions éclairées.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/lacourcelle-associes/service-validation-potentiel.png"
       },
       {
         "id": "creation-entreprise",
         "icon": "Rocket",
         "title": "Création d'entreprise",
         "description": "De l'idée au projet concret : structuration, étude de marché, business plan. Vous accompagner dans votre entrepreneuriat.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/lacourcelle-associes/service-creation-entreprise.png"
       },
       {
         "id": "mobilite-conjoint",
         "icon": "MapPin",
         "title": "Mobilité du conjoint",
         "description": "Accompagnement spécifique pour les conjoints de collaborateurs en mutation géographique. Faciliter l'installation et la recherche d'emploi dans la nouvelle région.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/lacourcelle-associes/service-mobilite-conjoint.png"
       }
     ]
   },
