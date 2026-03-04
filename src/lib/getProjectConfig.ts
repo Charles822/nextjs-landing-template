@@ -9,6 +9,7 @@ import fidemconseil from "@/config/projects/fidemconseil.json";
 import altiusconseil from "@/config/projects/altiusconseil.json";
 import xtep from "@/config/projects/xtep.json";
 import lacourcelleassocies from "@/config/projects/lacourcelle-associes.json";
+import penicaudpatrimoine from "@/config/projects/penicaudpatrimoine.json";
 
 const PROJECT_CONFIGS: Record<string, ProjectConfig> = {
   acfaty: acfaty as ProjectConfig,
@@ -20,6 +21,7 @@ const PROJECT_CONFIGS: Record<string, ProjectConfig> = {
   altiusconseil: altiusconseil as ProjectConfig,
   xtep: xtep as ProjectConfig,
   lacourcelleassocies: lacourcelleassocies as ProjectConfig,
+  penicaudpatrimoine: penicaudpatrimoine as ProjectConfig,
 };
 
 const PROJECT_SLUGS = Object.keys(PROJECT_CONFIGS) as ProjectSlug[];
@@ -33,7 +35,8 @@ export type ProjectSlug =
   | "fidemconseil"
   | "altiusconseil"
   | "xtep"
-  | "lacourcelleassocies";
+  | "lacourcelleassocies"
+  | "penicaudpatrimoine";
 
 export function getProjectConfig(slug: string): ProjectConfig | null {
   return PROJECT_CONFIGS[slug] ?? null;
