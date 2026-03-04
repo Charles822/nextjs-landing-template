@@ -83,28 +83,32 @@
         "icon": "TrendingUp",
         "title": "Optimisation fiscale & transmission",
         "description": "Pour les professionnels : transmission d'entreprise, optimisation du régime fiscal, stratégies de holding. Pour les particuliers : transmission du patrimoine, donations, successions.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/penicaudpatrimoine/service-optimisation-fiscale.png"
       },
       {
         "id": "diversification-epargne",
         "icon": "PiggyBank",
         "title": "Diversification de l'épargne",
         "description": "Placements financiers adaptés à votre profil, SCPI, fonds d'investissement, solutions d'épargne longue durée (PER, assurance-vie).",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/penicaudpatrimoine/service-diversification-epargne.png"
       },
       {
         "id": "investissement-immobilier",
         "icon": "Home",
         "title": "Investissement immobilier",
         "description": "Conseil en investissement locatif, défiscalisation (Pinel, Malraux), gestion de patrimoine immobilier, promotion immobilière.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/penicaudpatrimoine/service-investissement-immobilier.png"
       },
       {
         "id": "retraite-prevoyance",
         "icon": "Shield",
         "title": "Retraite, épargne & prévoyance",
         "description": "Planification retraite (PER, PERP), solutions de prévoyance (invalidité, décès), épargne santé, complémentaire retraite.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/penicaudpatrimoine/service-retraite-prevoyance.png"
       }
     ]
   },
