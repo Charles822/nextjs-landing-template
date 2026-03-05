@@ -3,8 +3,9 @@
   "name": "Penicaud Patrimoine",
   "brandColor": "#36a9e1",
   "hero": {
-    "heroVariant": "gradient",
-    "imageAlt": "Cabinet de gestion de patrimoine - Orléans & Fontainebleau",
+    "heroVariant": "image",
+    "image": "/penicaudpatrimoine/cabinet-qualite.png",
+    "imageAlt": "Cabinet Penicaud Patrimoine - Château historique d'Orléans",
     "headline": {
       "line1": "Votre patrimoine",
       "line2": "mérite une gestion experte.",
