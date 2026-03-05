@@ -3,7 +3,9 @@
   "name": "BonSens Conseil",
   "brandColor": "#2D5A3D",
   "hero": {
-    "imageAlt": "BonSens Conseil - RSE",
+    "heroVariant": "image",
+    "image": "/bonsensconseil-v2/hero-rse-consulting.png",
+    "imageAlt": "Consultante RSE en réunion de conseil stratégique",
     "headline": {
       "line1": "Intégrez la RSE",
       "line2": "dans votre stratégie",
@@ -16,11 +18,12 @@
     "badge2": "+20 ans\nd'expérience",
     "cardTitle": "Agréé AFNOR",
     "cardSubtitle": "ISO 26000 • ISO 20400",
-    "caption": "+80 organisations accompagnées",
-    "heroVariant": "gradient"
+    "caption": "+80 organisations accompagnées"
   },
   "navigation": {
     "logoText": "BonSens Conseil",
+    "logoImage": "/bonsensconseil-v2/logo-bonsens.png",
+    "logoImageLight": "/bonsensconseil-v2/logo-bonsens.png",
     "navLinks": [
       { "label": "Nos expertises", "href": "#expertises" },
       { "label": "Notre méthode", "href": "#methodologie" },
@@ -53,21 +56,24 @@
         "icon": "Leaf",
         "title": "Conseil stratégique RSE",
         "description": "Définir une feuille de route RSE cohérente avec votre stratégie métier. Intégration de la RSE à votre plan stratégique, cartographie des parties prenantes, plan d'action avec indicateurs.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/bonsensconseil-v2/service-conseil-strategique.png"
       },
       {
         "id": "diagnostic",
         "icon": "Award",
         "title": "Diagnostic et évaluation",
         "description": "Évaluez votre niveau de maturité et identifiez vos leviers de progrès. Évaluation ISO 26000 agréée AFNOR, diagnostic achats responsables, matrice de matérialité ESG.",
-        "cta": "Demander un diagnostic"
+        "cta": "Demander un diagnostic",
+        "image": "/bonsensconseil-v2/service-diagnostic-evaluation.png"
       },
       {
         "id": "formation",
         "icon": "BookOpen",
         "title": "Formations sur mesure",
         "description": "Monter en compétence interne sur les enjeux RSE. Formations pour COMEX, responsables RSE, équipes opérationnelles. Préparation aux labels certifiants.",
-        "cta": "Voir les programmes"
+        "cta": "Voir les programmes",
+        "image": "/bonsensconseil-v2/service-formations.png"
       }
     ]
   },
