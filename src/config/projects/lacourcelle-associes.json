@@ -3,8 +3,9 @@
   "name": "La Courcelle & Associés",
   "brandColor": "#b0107d",
   "hero": {
-    "heroVariant": "gradient",
-    "imageAlt": "Cabinet de conseil en évolution professionnelle",
+    "heroVariant": "image",
+    "image": "/lacourcelle-associes/hero-coaching-professionnel.png",
+    "imageAlt": "Consultante en évolution professionnelle accompagnant un client",
     "headline": {
       "line1": "Votre évolution professionnelle",
       "line2": "commence ici.",
