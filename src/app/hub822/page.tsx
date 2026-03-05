@@ -22,19 +22,6 @@ export default function Home() {
           </Link>
 
           <Link 
-            href="/bonsensconseil"
-            className="block p-6 bg-white/10 hover:bg-white/20 rounded-2xl transition-all border border-white/10"
-          >
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="text-xl font-semibold mb-1 text-[#2D5A3D]">BonSens Conseil (V1)</h2>
-                <p className="text-slate-400 text-sm">Première version - structure personnalisée</p>
-              </div>
-              <span className="text-2xl">→</span>
-            </div>
-          </Link>
-
-          <Link 
             href="/bonsensconseil-v2"
             className="block p-6 bg-[#2D5A3D]/20 hover:bg-[#2D5A3D]/30 rounded-2xl transition-all border border-[#2D5A3D]/30"
           >
@@ -42,19 +29,6 @@ export default function Home() {
               <div>
                 <h2 className="text-xl font-semibold mb-1 text-[#4ade80]">BonSens Conseil V2 ⭐</h2>
                 <p className="text-slate-300 text-sm">Version STRICTEMENT conforme au master template</p>
-              </div>
-              <span className="text-2xl">→</span>
-            </div>
-          </Link>
-
-          <Link 
-            href="/greenconseil"
-            className="block p-6 bg-white/10 hover:bg-white/20 rounded-2xl transition-all border border-white/10"
-          >
-            <div className="flex items-center justify-between">
-              <div>
-                <h2 className="text-xl font-semibold mb-1 text-[#00A651]">GREEN Conseil (V1)</h2>
-                <p className="text-slate-400 text-sm">Première version - structure personnalisée</p>
               </div>
               <span className="text-2xl">→</span>
             </div>
