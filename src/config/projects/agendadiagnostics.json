@@ -3,7 +3,8 @@
   "name": "Agenda Diagnostics",
   "brandColor": "#0094d3",
   "hero": {
-    "heroVariant": "gradient",
+    "heroVariant": "image",
+    "image": "/agendadiagnostics/hero-agenda.png",
     "imageAlt": "Diagnostiqueur immobilier certifié réalisant un diagnostic DPE",
     "headline": {
       "line1": "Votre diagnostic immobilier",
@@ -106,21 +107,24 @@
         "icon": "Zap",
         "title": "Électricité – Diagnostic Électrique",
         "description": "Vérification de l'installation électrique pour les installations de plus de 15 ans.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/agendadiagnostics/service-electrique.png"
       },
       {
         "id": "gaz",
         "icon": "Flame",
         "title": "Gaz – Diagnostic Gaz",
         "description": "Contrôle de l'installation de gaz pour les installations de plus de 15 ans.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/agendadiagnostics/service-gaz.png"
       },
       {
         "id": "termites",
         "icon": "Bug",
         "title": "Termites – Diagnostic Termites",
         "description": "Recherche de termites et autres insectes xylophages selon les zones à risque.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/agendadiagnostics/service-termites.png"
       }
     ]
   },

@@ -20,9 +20,9 @@ export default function Navigation({ config }: NavigationProps) {
                 <Image
                   src={navigation.logoImageLight ?? navigation.logoImage!}
                   alt={config.name}
-                  width={120}
-                  height={40}
-                  className={`object-contain h-10 w-auto ${navigation.logoImageLight ? "" : "brightness-0"}`}
+                  width={config.slug === "agendadiagnostics" ? 160 : 120}
+                  height={config.slug === "agendadiagnostics" ? 50 : 40}
+                  className={`object-contain ${config.slug === "agendadiagnostics" ? "h-12" : "h-10"} w-auto ${navigation.logoImageLight ? "" : "brightness-0"}`}
                 />
                 {config.slug === "xtep" && (
                   <span className="font-bold text-2xl tracking-tight">
