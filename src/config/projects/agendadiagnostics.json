@@ -82,21 +82,24 @@
         "icon": "Thermometer",
         "title": "DPE – Diagnostic de Performance Énergétique",
         "description": "Évaluez la consommation énergétique de votre bien et son impact environnemental. Obligatoire pour toute vente ou location.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/agendadiagnostics/service-dpe.png"
       },
       {
         "id": "amiante",
         "icon": "AlertTriangle",
         "title": "Amiante – Diagnostic Amiante avant vente",
         "description": "Recherche de matériaux contenant de l'amiante dans les parties privatives pour les biens construits avant 1997.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/agendadiagnostics/service-amiante.png"
       },
       {
         "id": "plomb",
         "icon": "Droplets",
         "title": "Plomb – Diagnostic Plomb (Crep)",
         "description": "Contrôle de la présence de plomb dans les peintures pour les biens construits avant 1949.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/agendadiagnostics/service-plomb.png"
       },
       {
         "id": "electrique",
