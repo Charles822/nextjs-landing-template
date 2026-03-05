@@ -134,6 +134,19 @@
       }
     ]
   },
+  "partners": {
+    "sectionLabel": "Accréditations & Références",
+    "headline": "Des organismes reconnus",
+    "headlineHighlight": "et des entreprises engagées.",
+    "items": [
+      { "name": "AFNOR Certification", "logo": "/bonsensconseil-v2/logo-afnor.png" },
+      { "name": "ISO Standards", "logo": "/bonsensconseil-v2/logo-iso.png" },
+      { "name": "ESS France", "logo": "/bonsensconseil-v2/logo-ess.png" },
+      { "name": "EcoGroup", "logo": "/bonsensconseil-v2/logo-ecogroup.png" },
+      { "name": "GreenTech Solutions", "logo": "/bonsensconseil-v2/logo-greentech.png" },
+      { "name": "Sustainable Partners", "logo": "/bonsensconseil-v2/logo-sustainable-partners.png" }
+    ]
+  },
   "partnersMarquee": [
     "RSE",
     "ISO 26000",
