@@ -17,11 +17,11 @@ export default function Footer({ config }: FooterProps) {
             <div className="flex items-center gap-2 mb-4">
               {navigation.logoImage ? (
                 <Image
-                  src={navigation.logoImage}
+                  src={navigation.logoImageLight ?? navigation.logoImage}
                   alt={config.name}
-                  width={140}
-                  height={48}
-                  className="object-contain h-12 w-auto brightness-0 invert opacity-90"
+                  width={160}
+                  height={56}
+                  className={`object-contain h-14 w-auto ${navigation.footerLogoFilter !== false ? "brightness-0 invert opacity-90" : "opacity-95"}`}
                 />
               ) : (
                 <>

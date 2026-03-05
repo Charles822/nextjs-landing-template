@@ -27,6 +27,8 @@ export interface ProjectConfig {
     logoImage?: string;
     /** Logo for light backgrounds (header). Colored graphic + black text. Falls back to logoImage + brightness-0 if absent. */
     logoImageLight?: string;
+    /** When false, footer logo is shown in color (no brightness-0 invert). Use for logos with white/light backgrounds to avoid white rectangle. */
+    footerLogoFilter?: boolean;
     navLinks: { label: string; href: string }[];
     ctaText: string;
   };

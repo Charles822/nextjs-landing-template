@@ -1,7 +1,7 @@
 {
   "slug": "fidemconseil",
   "name": "Fidem Conseil",
-  "brandColor": "#1e3a5f",
+  "brandColor": "#2D818C",
   "hero": {
     "heroVariant": "gradient",
     "headline": {
@@ -21,9 +21,18 @@
   "navigation": {
     "logoText": "Fidem Conseil",
     "navLinks": [
-      { "label": "Nos services", "href": "#services" },
-      { "label": "Notre méthode", "href": "#methodologie" },
-      { "label": "Contact", "href": "#contact" }
+      {
+        "label": "Nos services",
+        "href": "#services"
+      },
+      {
+        "label": "Notre méthode",
+        "href": "#methodologie"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
     ],
     "ctaText": "Demander un devis"
   },
@@ -144,5 +153,32 @@
   "footer": {
     "description": "Gestion de paie et assistance juridique RH pour entreprises et EHPAD. Conformité garantie.",
     "copyright": "Fidem Conseil"
+  },
+  "partners": {
+    "sectionLabel": "Nos Références",
+    "headline": "Ils nous font",
+    "headlineHighlight": "confiance.",
+    "items": [
+      {
+        "name": "Client Entreprise 1",
+        "logo": "/fidemconseil/logos-1.png"
+      },
+      {
+        "name": "Client Entreprise 2",
+        "logo": "/fidemconseil/logos-2.png"
+      },
+      {
+        "name": "Client Entreprise 3",
+        "logo": "/fidemconseil/logos-3.png"
+      },
+      {
+        "name": "Client Entreprise 4",
+        "logo": "/fidemconseil/logos-4.png"
+      },
+      {
+        "name": "Client Entreprise 5",
+        "logo": "/fidemconseil/logos-5.png"
+      }
+    ]
   }
 }

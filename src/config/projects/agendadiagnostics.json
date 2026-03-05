@@ -24,6 +24,7 @@
     "logoText": "Agenda Diagnostics",
     "logoImage": "/agendadiagnostics/logo-agenda.png",
     "logoImageLight": "/agendadiagnostics/logo-agenda.png",
+    "footerLogoFilter": false,
     "navLinks": [
       { "label": "Prendre RDV", "href": "#contact" },
       { "label": "Trouver un diagnostiqueur", "href": "#network" },

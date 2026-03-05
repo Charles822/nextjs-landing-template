@@ -14,15 +14,15 @@ export default function Navigation({ config }: NavigationProps) {
     <nav className="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50">
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-3">
+          <div className="flex items-center gap-3 cursor-default">
             {(navigation.logoImageLight ?? navigation.logoImage) ? (
               <>
                 <Image
                   src={navigation.logoImageLight ?? navigation.logoImage!}
                   alt={config.name}
-                  width={config.slug === "agendadiagnostics" ? 160 : 120}
-                  height={config.slug === "agendadiagnostics" ? 50 : 40}
-                  className={`object-contain ${config.slug === "agendadiagnostics" ? "h-12" : "h-10"} w-auto ${navigation.logoImageLight ? "" : "brightness-0"}`}
+                  width={config.slug === "agendadiagnostics" ? 200 : 120}
+                  height={config.slug === "agendadiagnostics" ? 64 : 40}
+                  className={`object-contain ${config.slug === "agendadiagnostics" ? "h-16" : "h-10"} w-auto ${navigation.logoImageLight ? "" : "brightness-0"}`}
                 />
                 {config.slug === "xtep" && (
                   <span className="font-bold text-2xl tracking-tight">
@@ -42,7 +42,7 @@ export default function Navigation({ config }: NavigationProps) {
                 <span className="font-semibold text-slate-900">{navigation.logoText}</span>
               </>
             )}
-          </Link>
+          </div>
 
           <div className="hidden md:flex items-center gap-8">
             {navigation.navLinks.map((link) => (
