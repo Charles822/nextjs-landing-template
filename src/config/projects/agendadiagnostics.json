@@ -1,0 +1,266 @@
+{
+  "slug": "agendadiagnostics",
+  "name": "Agenda Diagnostics",
+  "brandColor": "#0094d3",
+  "hero": {
+    "heroVariant": "gradient",
+    "imageAlt": "Diagnostiqueur immobilier certifié réalisant un diagnostic DPE",
+    "headline": {
+      "line1": "Votre diagnostic immobilier",
+      "line2": "en quelques clics",
+      "line3": ""
+    },
+    "subheadline": "Depuis plus de 30 ans, Agenda Diagnostics met en relation particuliers et professionnels avec un réseau national de diagnostiqueurs certifiés.",
+    "subheadlineBold": "Simplicité, transparence, expertise – pour vendre, louer ou rénover en toute sérénité.",
+    "ctaText": "Prendre rendez-vous en ligne",
+    "badge1": "156 cabinets\nen France",
+    "badge2": "Diagnostiqueurs\ncertifiés",
+    "cardTitle": "Nos diagnostics",
+    "cardSubtitle": "DPE, Amiante, Plomb, Électricité, Gaz",
+    "caption": "Devis instantané"
+  },
+  "navigation": {
+    "logoText": "Agenda Diagnostics",
+    "logoImage": "/agendadiagnostics/logo-agenda.png",
+    "logoImageLight": "/agendadiagnostics/logo-agenda.png",
+    "navLinks": [
+      { "label": "Prendre RDV", "href": "#contact" },
+      { "label": "Trouver un diagnostiqueur", "href": "#network" },
+      { "label": "Pour les professionnels", "href": "#professionals" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "ctaText": "Obtenir un devis"
+  },
+  "valueProposition": {
+    "headline": "Pourquoi choisir Agenda Diagnostics ?",
+    "subheadline": "Notre réseau historique combine l'expertise réglementaire de 30 ans d'expérience avec la simplicité d'une plateforme digitale moderne.",
+    "features": [
+      {
+        "icon": "Map",
+        "title": "Le réseau historique",
+        "description": "Pionnier depuis 1993, nous avons construit le premier réseau national de diagnostiqueurs. 156 cabinets, une même exigence : la conformité réglementaire et la satisfaction client."
+      },
+      {
+        "icon": "Zap",
+        "title": "Simplicité digitale",
+        "description": "Plus besoin de chercher, comparer, négocier. En 3 clics, vous êtes mis en relation avec le professionnel certifié le plus proche. Devis instantané, RDV sous 48h."
+      },
+      {
+        "icon": "Shield",
+        "title": "Certification garantie",
+        "description": "Tous nos diagnostiqueurs sont certifiés selon les normes en vigueur (Qualibat, Qualifelec, etc.). Votre diagnostic est valide, opposable, et conforme aux obligations légales."
+      },
+      {
+        "icon": "DollarSign",
+        "title": "Transparence tarifaire",
+        "description": "Le prix affiché est le prix payé. Pas de frais cachés, pas de surprise. Vous savez exactement à quoi vous attendre avant même de prendre rendez-vous."
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "Nos Diagnostics",
+    "headline": "Tous les diagnostics immobiliers,",
+    "headlineHighlight": "pour toutes vos situations.",
+    "benefitsTitle": "Pourquoi faire appel à nous ?",
+    "benefits": [
+      {
+        "title": "Conseil personnalisé",
+        "description": "Nous vous guidons vers les diagnostics réellement nécessaires à votre situation."
+      },
+      {
+        "title": "Rapidité d'intervention",
+        "description": "Mise en relation sous 24h, intervention sous 48-72h partout en France."
+      },
+      {
+        "title": "Rapports conformes",
+        "description": "Documents valides juridiquement, opposables, prêts à être joints à vos dossiers."
+      }
+    ],
+    "items": [
+      {
+        "id": "dpe",
+        "icon": "Thermometer",
+        "title": "DPE – Diagnostic de Performance Énergétique",
+        "description": "Évaluez la consommation énergétique de votre bien et son impact environnemental. Obligatoire pour toute vente ou location.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "amiante",
+        "icon": "AlertTriangle",
+        "title": "Amiante – Diagnostic Amiante avant vente",
+        "description": "Recherche de matériaux contenant de l'amiante dans les parties privatives pour les biens construits avant 1997.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "plomb",
+        "icon": "Droplets",
+        "title": "Plomb – Diagnostic Plomb (Crep)",
+        "description": "Contrôle de la présence de plomb dans les peintures pour les biens construits avant 1949.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "electrique",
+        "icon": "Zap",
+        "title": "Électricité – Diagnostic Électrique",
+        "description": "Vérification de l'installation électrique pour les installations de plus de 15 ans.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "gaz",
+        "icon": "Flame",
+        "title": "Gaz – Diagnostic Gaz",
+        "description": "Contrôle de l'installation de gaz pour les installations de plus de 15 ans.",
+        "cta": "En savoir plus"
+      },
+      {
+        "id": "termites",
+        "icon": "Bug",
+        "title": "Termites – Diagnostic Termites",
+        "description": "Recherche de termites et autres insectes xylophages selon les zones à risque.",
+        "cta": "En savoir plus"
+      }
+    ]
+  },
+  "methodology": {
+    "sectionLabel": "Notre Processus",
+    "headline": "Comment ça marche ?",
+    "headlineHighlight": "3 étapes simples.",
+    "variant": "standard",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "FileText",
+        "title": "Demande en ligne",
+        "description": "Remplissez notre formulaire en 2 minutes. Indiquez votre type de bien, votre situation et les diagnostics nécessaires. Obtenez un devis instantané."
+      },
+      {
+        "number": "02",
+        "icon": "Users",
+        "title": "Mise en relation",
+        "description": "Nous vous mettons en contact avec le diagnostiqueur certifié le plus proche de chez vous. Échangez directement pour fixer un créneau."
+      },
+      {
+        "number": "03",
+        "icon": "CheckCircle",
+        "title": "Intervention & rapport",
+        "description": "Le diagnostiqueur intervient sous 48-72h. Vous recevez vos rapports conformes, opposables, prêts à être joints à vos documents."
+      }
+    ]
+  },
+  "offers": {
+    "sectionLabel": "Pour Qui ?",
+    "headline": "Nos solutions adaptées",
+    "headlineHighlight": "à chaque profil.",
+    "items": [
+      {
+        "id": "particuliers",
+        "icon": "User",
+        "title": "Pour les particuliers",
+        "description": "Vous vendez, louez, achetez ou rénovez ? Les diagnostics immobiliers sont une étape obligatoire. Nous vous accompagnons avec conseil personnalisé, simplicité et transparence.",
+        "features": [
+          "Conseil personnalisé sur les diagnostics nécessaires",
+          "Prix fixe, pas de surprise",
+          "Intervention sous 48-72h",
+          "Rapports conformes, valides juridiquement"
+        ],
+        "cta": "Je suis un particulier"
+      },
+      {
+        "id": "professionnels",
+        "icon": "Briefcase",
+        "title": "Pour les professionnels",
+        "description": "Agent immobilier, notaire, promoteur, administrateur de biens ? Gagnez du temps et sécurisez vos transactions avec un interlocuteur unique et des délais tenus.",
+        "features": [
+          "Un interlocuteur unique pour tous vos diagnostics",
+          "Délais tenus grâce à notre réseau national",
+          "Rapports standardisés facilitant votre travail",
+          "Tarifs préférentiels pour les volumes",
+          "Suivi dédié pour les professionnels"
+        ],
+        "cta": "Je suis un professionnel"
+      }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Accréditations",
+    "headline": "Des certifications reconnues,",
+    "headlineHighlight": "des partenaires de confiance.",
+    "items": [
+      { "name": "Qualibat", "logo": "/agendadiagnostics/logo-qualibat.png" },
+      { "name": "Qualifelec", "logo": "/agendadiagnostics/logo-qualifelec.png" },
+      { "name": "OPQIBI", "logo": "/agendadiagnostics/logo-opqibi.png" },
+      { "name": "Amiante Certifié", "logo": "/agendadiagnostics/logo-amiante.png" },
+      { "name": "Plomb Certifié", "logo": "/agendadiagnostics/logo-plomb.png" },
+      { "name": "Gaz Certifié", "logo": "/agendadiagnostics/logo-gaz.png" }
+    ]
+  },
+  "partnersMarquee": [
+    "DPE",
+    "Amiante",
+    "Plomb",
+    "Électricité",
+    "Gaz",
+    "Termites",
+    "Mesurage Loi Carrez",
+    "Assainissement"
+  ],
+  "testimonials": {
+    "sectionLabel": "Témoignages",
+    "headline": "Ils nous font",
+    "headlineHighlight": "confiance.",
+    "items": [
+      {
+        "quote": "Je devais vendre rapidement mon appartement. Agenda Diagnostics m'a mis en relation avec un diagnostiqueur sous 24h. Tout était prêt en 3 jours. Simple, efficace, et le prix correspondait exactement au devis.",
+        "author": "Marie D.",
+        "company": "Propriétaire vendeuse"
+      },
+      {
+        "quote": "Avec 20 à 30 transactions par an, les diagnostics sont chronophages. Depuis que je travaille avec Agenda Diagnostics, j'ai un interlocuteur unique, des délais tenus, et mes clients sont rassurés par la certification des diagnostiqueurs.",
+        "author": "Pierre L.",
+        "company": "Agent immobilier"
+      },
+      {
+        "quote": "La conformité des diagnostics est cruciale dans nos actes. Avec Agenda Diagnostics, je sais que les rapports sont opposables. Le réseau national est un vrai plus pour nos clients qui ont des biens partout en France.",
+        "author": "Sophie M.",
+        "company": "Notaire"
+      }
+    ]
+  },
+  "blog": {
+    "sectionLabel": "Actualités & Conseils",
+    "headline": "Le diagnostic immobilier",
+    "headlineHighlight": "expliqué.",
+    "items": [
+      {
+        "id": "dpe-2023",
+        "title": "DPE 2023 : ce qui change pour les propriétaires",
+        "excerpt": "Les nouvelles règles du Diagnostic de Performance Énergétique entrent en vigueur. Comment se préparer, quelles sont les obligations, quels impacts sur la valeur de votre bien ?",
+        "href": "#"
+      },
+      {
+        "id": "amiante-diagnostic",
+        "title": "Amiante : jusqu'à quand faut-il faire un diagnostic ?",
+        "excerpt": "Le diagnostic amiante est obligatoire pour les biens construits avant 1997. Mais qu'en est-il des rénovations, des extensions, des changements d'usage ?",
+        "href": "#"
+      },
+      {
+        "id": "checklist-vente",
+        "title": "Vendre son bien : la checklist des diagnostics obligatoires",
+        "excerpt": "DPE, amiante, plomb, électricité, gaz, termites… Notre guide pour ne rien oublier et vendre votre bien en toute conformité.",
+        "href": "#"
+      }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "Contact & Devis",
+    "headline": "Un projet ? Une question ?",
+    "intro": "Notre équipe est à votre écoute pour vous conseiller sur les diagnostics nécessaires à votre situation.",
+    "introBold": "Devis gratuit et sans engagement.",
+    "email": "contact@agendadiagnostics.fr",
+    "phone": "01 23 45 67 89"
+  },
+  "footer": {
+    "description": "Réseau national de diagnostic immobilier depuis 1993. 156 cabinets certifiés sur tout le territoire.",
+    "copyright": "© 2026 Agenda Diagnostics. Tous droits réservés."
+  }
+}
