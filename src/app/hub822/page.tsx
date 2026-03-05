@@ -88,11 +88,11 @@ export default function Home() {
 
           <Link 
             href="/fidemconseil"
-            className="block p-6 bg-[#1e3a5f]/20 hover:bg-[#1e3a5f]/30 rounded-2xl transition-all border border-[#1e3a5f]/30"
+            className="block p-6 bg-[#2D818C]/20 hover:bg-[#2D818C]/30 rounded-2xl transition-all border border-[#2D818C]/30"
           >
             <div className="flex items-center justify-between">
               <div>
-                <h2 className="text-xl font-semibold mb-1 text-[#4a90a4]">Fidem Conseil ⭐</h2>
+                <h2 className="text-xl font-semibold mb-1 text-[#2D818C]">Fidem Conseil ⭐</h2>
                 <p className="text-slate-300 text-sm">Gestion de paie et RH externalisée</p>
               </div>
               <span className="text-2xl">→</span>

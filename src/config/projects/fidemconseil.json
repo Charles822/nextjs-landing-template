@@ -3,7 +3,9 @@
   "name": "Fidem Conseil",
   "brandColor": "#2D818C",
   "hero": {
-    "heroVariant": "gradient",
+    "heroVariant": "image",
+    "image": "/fidemconseil/hero-fidemconseil.png",
+    "imageAlt": "Consultant RH en réunion avec des dirigeants - Fidem Conseil",
     "headline": {
       "line1": "Déléguez votre paie",
       "line2": "et votre gestion RH.",
@@ -20,6 +22,9 @@
   },
   "navigation": {
     "logoText": "Fidem Conseil",
+    "logoImage": "/fidemconseil/logo.png",
+    "logoImageLight": "/fidemconseil/logo.png",
+    "footerLogoFilter": false,
     "navLinks": [
       {
         "label": "Nos services",
@@ -61,21 +66,24 @@
         "icon": "FileText",
         "title": "Gestion de la Paie",
         "description": "De la paie simple à la gestion RH complète. 3 niveaux de service : Paie Simple (dès 12€ HT), Paie + Assistance RH (dès 19€ HT), ou Gestion RH complète (dès 20€ HT). Double contrôle qualité sur chaque bulletin.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/fidemconseil/service-paie.png"
       },
       {
         "id": "juridique",
         "icon": "Scale",
         "title": "Assistance Juridique RH",
         "description": "Accompagnement légal complet : contrats de travail (CDI, CDD, apprentissage), gestion des temps (RTT, modulation, travail de nuit), procédures disciplinaires et licenciements, contentieux sociaux.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/fidemconseil/service-juridique.png"
       },
       {
         "id": "documents",
         "icon": "FileCheck",
         "title": "Documents Obligatoires",
         "description": "Mise en conformité complète : registre du personnel (dès la 1ère embauche), DUER (Document Unique d'Évaluation des Risques), règlement intérieur (à partir de 20 salariés), panneau d'affichage conforme.",
-        "cta": "En savoir plus"
+        "cta": "En savoir plus",
+        "image": "/fidemconseil/service-documents.png"
       }
     ]
   },
@@ -161,23 +169,23 @@
     "items": [
       {
         "name": "Client Entreprise 1",
-        "logo": "/fidemconseil/logos-1.png"
+        "logo": "/placeholders/logo-1.svg"
       },
       {
         "name": "Client Entreprise 2",
-        "logo": "/fidemconseil/logos-2.png"
+        "logo": "/placeholders/logo-2.svg"
       },
       {
         "name": "Client Entreprise 3",
-        "logo": "/fidemconseil/logos-3.png"
+        "logo": "/placeholders/logo-3.svg"
       },
       {
         "name": "Client Entreprise 4",
-        "logo": "/fidemconseil/logos-4.png"
+        "logo": "/placeholders/logo-4.svg"
       },
       {
         "name": "Client Entreprise 5",
-        "logo": "/fidemconseil/logos-5.png"
+        "logo": "/placeholders/logo-5.svg"
       }
     ]
   }

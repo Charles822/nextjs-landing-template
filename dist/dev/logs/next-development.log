@@ -1,7 +1,17 @@
-[00:00:01.137] Server  LOG     ✓ Ready in 864ms
-[00:00:03.311] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[00:00:03.311] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[00:00:03.312] Browser WARN    Image with src "http://localhost:3002/agendadiagnostics/logo-agenda.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:55.462] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[00:02:55.661] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[00:02:55.661] Browser WARN    Image with src "http://localhost:3002/agendadiagnostics/logo-agenda.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:01.047] Server  LOG     ✓ Ready in 796ms
+[00:00:25.797] Browser WARN    Image with src "http://localhost:3002/fidemconseil/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:58.143] Server  LOG     ✓ Compiled in 927ms
+[00:03:58.232] Browser WARN    Image with src "http://localhost:3002/fidemconseil/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:31.365] Server  LOG     ✓ Compiled in 115ms
+[00:04:31.986] Browser ERROR   React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ ServiceImageCarousel 1. useState                   useState
+2. undefined                  useEffect
+
+[00:04:31.986] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
+[00:04:33.584] Server  LOG     ✓ Compiled in 97ms
+[00:04:34.661] Browser WARN    Image with src "http://localhost:3002/fidemconseil/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:35.612] Server  LOG     ✓ Compiled in 62ms

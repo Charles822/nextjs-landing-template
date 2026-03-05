@@ -80,7 +80,6 @@
     --font-sans: var(--font-sans), system-ui, sans-serif;
     --font-serif: var(--font-serif), Georgia, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --color-red-50: #fef2f2;
     --color-red-100: #ffe2e2;
     --color-red-200: #ffcaca;
     --color-red-300: #ffa3a3;
@@ -233,7 +232,6 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
-      --color-red-50: lab(96.5005% 4.18508 1.52328);
       --color-red-100: lab(92.243% 10.2865 3.83865);
       --color-red-200: lab(86.017% 19.8815 7.75869);
       --color-red-300: lab(76.5514% 36.422 15.5335);
@@ -849,10 +847,6 @@
     }
   }
 
-  .m-0 {
-    margin: calc(var(--spacing) * 0);
-  }
-
   .-mx-4 {
     margin-inline: calc(var(--spacing) * -4);
   }
@@ -1136,10 +1130,6 @@
 
   .h-48 {
     height: calc(var(--spacing) * 48);
-  }
-
-  .h-56 {
-    height: calc(var(--spacing) * 56);
   }
 
   .h-64 {
@@ -1526,10 +1516,6 @@
     gap: calc(var(--spacing) * 36);
   }
 
-  .gap-48 {
-    gap: calc(var(--spacing) * 48);
-  }
-
   .gap-125 {
     gap: calc(var(--spacing) * 125);
   }
@@ -1702,14 +1688,14 @@
     border-color: lab(59.7399% -52.4937 33.0238 / .3);
   }
 
-  .border-\[\#1e3a5f\]\/30 {
-    border-color: #1e3a5f4d;
-    border-color: lab(23.7237% -.581726 -25.6358 / .3);
-  }
-
   .border-\[\#2D5A3D\]\/30 {
     border-color: #2d5a3d4d;
     border-color: lab(34.3884% -21.8544 11.8173 / .3);
+  }
+
+  .border-\[\#2D818C\]\/30 {
+    border-color: #2d818c4d;
+    border-color: lab(49.3882% -23.1766 -13.796 / .3);
   }
 
   .border-\[\#36a9e1\]\/30 {
@@ -1829,11 +1815,6 @@
     background-color: lab(59.7399% -52.4937 33.0238 / .2);
   }
 
-  .bg-\[\#1e3a5f\]\/20 {
-    background-color: #1e3a5f33;
-    background-color: lab(23.7237% -.581726 -25.6358 / .2);
-  }
-
   .bg-\[\#2D5A3D\] {
     background-color: #2d5a3d;
   }
@@ -1841,6 +1822,11 @@
   .bg-\[\#2D5A3D\]\/20 {
     background-color: #2d5a3d33;
     background-color: lab(34.3884% -21.8544 11.8173 / .2);
+  }
+
+  .bg-\[\#2D818C\]\/20 {
+    background-color: #2d818c33;
+    background-color: lab(49.3882% -23.1766 -13.796 / .2);
   }
 
   .bg-\[\#36a9e1\]\/20 {
@@ -2851,8 +2837,8 @@
     color: lab(34.3884% -21.8544 11.8173 / .3);
   }
 
-  .text-\[\#4a90a4\] {
-    color: #4a90a4;
+  .text-\[\#2D818C\] {
+    color: #2d818c;
   }
 
   .text-\[\#4ade80\] {
@@ -3485,20 +3471,16 @@
     user-select: none;
   }
 
+  .\[app-\:�E\] {
+    app-: �E;
+  }
+
+  .\[app\:\18 6\] {
+    app:  6;
+  }
+
   .\[key\:m\^4ng\] {
     key: m^ 4ng;
-  }
-
-  .\[key\:t5\14 \] {
-    key: t5 ;
-  }
-
-  .\[key\:ϩ4ng\] {
-    key: ϩ4ng;
-  }
-
-  .\[key\:�\8 \14 \] {
-    key: �  ;
   }
 
   .\[key\:��4ng\] {
@@ -3515,14 +3497,6 @@
 
   .\[name\:\&\6 �\] {
     name: &  �;
-  }
-
-  .\[name\:CQ�ng\] {
-    name: CQ�ng;
-  }
-
-  .\[name\:�\.�\] {
-    name: �. �;
   }
 
   @media (hover: hover) {
@@ -3660,16 +3634,16 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-\[\#1e3a5f\]\/30:hover {
-      background-color: #1e3a5f4d;
-      background-color: lab(23.7237% -.581726 -25.6358 / .3);
+    .hover\:bg-\[\#2D5A3D\]\/30:hover {
+      background-color: #2d5a3d4d;
+      background-color: lab(34.3884% -21.8544 11.8173 / .3);
     }
   }
 
   @media (hover: hover) {
-    .hover\:bg-\[\#2D5A3D\]\/30:hover {
-      background-color: #2d5a3d4d;
-      background-color: lab(34.3884% -21.8544 11.8173 / .3);
+    .hover\:bg-\[\#2D818C\]\/30:hover {
+      background-color: #2d818c4d;
+      background-color: lab(49.3882% -23.1766 -13.796 / .3);
     }
   }
 
